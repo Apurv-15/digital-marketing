@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar1 from "./components/Navbar/Index1";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // Uncomment this line
+import HeroPage from "./components/Hero page/HeroPage";
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       {/* Wrap your components with the Router component */}
       <div>
         <Navbar1 />
-
+        <HeroPage />
       </div>
     </Router>
   );
