@@ -6,7 +6,10 @@ const HeroPage = () => {
     <div>
       <section className="showcase">
         <div className="text">
-          <h2>Discover the new hope</h2>
+          <h2>Make a wise Decision Today ,</h2>
+            
+          <h2>Get website Today for Better Business </h2>
+          
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

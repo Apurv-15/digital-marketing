@@ -1,21 +1,27 @@
 import React from "react";
 import Navbar1 from "./components/Navbar/Index1";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; // Uncomment this line
+import { BrowserRouter as Router } from "react-router-dom";
 import HeroPage from "./components/Hero page/HeroPage";
+import "./App.css";
 
 const App = () => {
   return (
     <Router>
-      {/* Wrap your components with the Router component */}
       <div>
         <Navbar1 />
-        <HeroPage />
+
+        {/* First HeroPage */}
+        <div className="hero-container">
+          <HeroPage />
+        </div>
+
+        {/* Second HeroPage */}
+        <div className="hero-container">
+          {/* Insert the second page here with white background */}
+        </div>
       </div>
     </Router>
   );
 };
-
-// Define your route components here
-// const Home = () => <div>Home Page</div>;
 
 export default App;
