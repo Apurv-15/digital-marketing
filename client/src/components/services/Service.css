@@ -1,0 +1,12 @@
+.root {
+    flex-grow: 1;
+    padding: 16px; /* Equivalent to theme.spacing(2) */
+  }
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

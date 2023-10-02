@@ -20,7 +20,7 @@ const HeroPage = () => {
       <section className="showcase">
         <div className="left-text">
           <div>
-            <h2>Make a wise Decision Today</h2>
+            <h2>Make a wise Decision</h2>
             <h2>Get a website Today for</h2>
             <h2>Better Business</h2>
           </div>

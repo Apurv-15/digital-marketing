@@ -3,6 +3,7 @@ import Navbar1 from "./components/Navbar/Index1";
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroPage from "./components/Hero page/HeroPage";
 import "./App.css";
+import Service from "./components/services/Service";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
 
         {/* Second HeroPage */}
         <div className="hero-container">
-          {/* Insert the second page here with white background */}
+        <Service/>
         </div>
       </div>
     </Router>
