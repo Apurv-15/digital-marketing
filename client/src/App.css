@@ -21,6 +21,6 @@
 
 .hero-container {
   height: 100vh; /* Set the height to the viewport height */
-  overflow-y: scroll; /* Add a vertical scrollbar when content overflows */
+  /* overflow-y: scroll; Add a vertical scrollbar when content overflows */
   scroll-behavior: smooth; /* Add smooth scrolling behavior */
 }

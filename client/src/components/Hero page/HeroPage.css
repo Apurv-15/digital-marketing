@@ -5,10 +5,33 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.orange-text1 {
+  color: rgb(255, 0, 255);
+}
 
+.orange-text2 {
+  color: rgb(255, 0, 255);
+}
+
+.orange-text3 {
+  color: rgb(255, 0, 255);
+}
+
+.orange-text4{
+  font-style: italic;
+  color: rgb(255, 0, 255);
+}
+
+.orange-text5{
+  color: rgb(255, 0, 255);
+}
+
+.orange-text6{
+  color: rgb(255, 0, 255);
+}
 
 .showcase {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -20,7 +43,6 @@
   transition: 0.5s;
   z-index: 2;
   flex-wrap: wrap;
-
 }
 .showcase.active {
   right: 300px;
@@ -28,21 +50,21 @@
 .left-text {
   position: relative;
   z-index: 10;
+  margin-top: 90px;
 }
 
 .left-text h2 {
-  font-size: 3em;
+  font-size: 4.8rem;
   font-weight: 600;
   color: #000000;
   line-height: 1em;
-  /* left-text-transform: uppercase; */
 }
 
 .left-text p {
-  font-size: 1.1em;
-  color: #2a0000;
-  margin: 20px 0;
-  font-weight: 400;
+  font-size: 1.5em;
+  color: #000000;
+  margin: 28px 0;
+  font-weight: 500;
   max-width: 700px;
 }
 .left-text a {
@@ -72,10 +94,40 @@
   }
 }
 
-.bg-image
-{
+.bg-image {
   display: flex;
-  flex-grow: 1;
-  /* flex-basis: 200; */
+  flex-grow: 5;
+  position: absolute; /* Position the animation absolutely within its container */
+  top: 66%; /* Adjust top position */
+  left: 80%; /* Adjust left position */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the animation horizontally and vertically */
+  margin: 0; /* Remove margin if not needed */
+  width: 50%; /* Adjust the width of the animation */
+  height: auto; /* Maintain aspect ratio */
 }
 
+.button-1 {
+  background-image: linear-gradient(
+    to right,
+    #ff00cc 0%, #ffd000  61%, #ff00cc
+  );
+  margin: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(255, 255, 255);
+  border-radius: 22px;
+  display:block;
+  cursor: pointer;  
+}
+
+.button-1:hover {
+  background-position: right center;
+  color: #000000;
+}

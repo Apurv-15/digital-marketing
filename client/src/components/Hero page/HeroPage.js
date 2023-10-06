@@ -2,8 +2,6 @@ import React from "react";
 import "./HeroPage.css";
 import Lottie from "react-lottie";
 import animationData from "../Images and video/animation_lmykgwl4.json";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
 
 const HeroPage = () => {
   const defaultOptions = {
@@ -20,23 +18,19 @@ const HeroPage = () => {
       <section className="showcase">
         <div className="left-text">
           <div>
-            <h2>Make a wise Decision Today</h2>
-            <h2>Get a website Today for</h2>
-            <h2>Better Business</h2>
+            <h2><span className="orange-text1">Digital</span> Marketing:</h2>
+            <h2>Elevate Your <span className="orange-text2">Brand</span>, Expand</h2>
+            <h2>Your Reach!</h2>
+            <h2>Better <span className="orange-text3">Business</span>!</h2>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          At <span className="orange-text4">Kahanikars</span>, we offer a comprehensive suite of digital marketing services designed to elevate your <span className="orange-text5">Brand</span> and expand your <span className="orange-text6">reach</span>!!
           </p>
-          <div className="button-1">
-            <Stack spacing={10} direction="row">
-              <Button variant="contained">Schedule Call</Button>
-            </Stack>
+          <button className="button-1">LET'S TALK</button>
           </div>
-        </div>
 
         <div className="bg-image">
-          <Lottie options={defaultOptions} height={400} width={400} />
+          <Lottie options={defaultOptions} height={480} width={498} />
         </div>
       </section>
     </div>
