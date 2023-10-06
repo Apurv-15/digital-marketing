@@ -165,7 +165,7 @@
   border-radius: 20px;
   font-weight:bold;
   cursor: pointer;
-  background-image: linear-gradient(to right, #ff00c8 0%, #ffca2a  51%, #ff00c8  100%);
+  background-image: linear-gradient(to right, #ff00c8 0%, #00bfff  51%, #ff00c8  100%);
   margin: 10px;
   text-align: center;
   text-transform: uppercase;

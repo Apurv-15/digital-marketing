@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { MenuData } from "./MenuData";
-import "./Navbar.css";
+import "./NavBar.css";
 
 class Navbar extends Component {
   state = {

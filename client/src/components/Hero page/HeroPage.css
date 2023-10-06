@@ -112,7 +112,7 @@
 .button-1 {
   background-image: linear-gradient(
     to right,
-    #ff00cc 0%, #ffd000  61%, #ff00cc
+    #ff00cc 0%, #00bfff  61%, #ff00cc
   );
   margin: 10px;
   padding: 12px 20px;
