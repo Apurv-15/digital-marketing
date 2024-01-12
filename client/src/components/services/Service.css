@@ -1,12 +1,21 @@
 .root {
     flex-grow: 1;
     padding: 16px; /* Equivalent to theme.spacing(2) */
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   
-  .card {
+  .card{
+  
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .card:hover .cad {
+    background-color: #f0f0f0; /* Change the background color on hover */
+    transform: scale(1.05); /* Add a scale effect on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
   }
   
