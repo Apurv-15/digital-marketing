@@ -4,15 +4,18 @@ import { BrowserRouter as Router } from "react-router-dom";
 import HeroPage from "./components/Hero page/HeroPage";
 import "./App.css";
 import Service from "./components/services/Service";
+import { Info } from "./components/Info page/Info";
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Navbar/>
+        <Navbar />
         <div className="hero-container">
-          <HeroPage />
-        </div>        
+          {/* <HeroPage /> */}
+          {/* <Service></Service> */}
+          {/* <Info></Info> */}
+        </div>
       </div>
     </Router>
   );

@@ -54,7 +54,7 @@
 }
 
 .left-text h2 {
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-weight: 600;
   color: #000000;
   line-height: 1em;
@@ -91,6 +91,11 @@
   }
   .left-text h2 {
     font-size: 3em;
+  }
+
+  .bg-image{
+    /* flex-wrap: wrap; */
+    flex-direction: column;
   }
 }
 

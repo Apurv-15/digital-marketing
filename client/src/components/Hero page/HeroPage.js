@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroPage.css";
 import Lottie from "react-lottie";
-import animationData from "../Images and video/animation_lmykgwl4.json";
+import animationData from "../Images and video/animation_heropage.json";
 
 const HeroPage = () => {
   const defaultOptions = {
