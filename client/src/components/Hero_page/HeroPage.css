@@ -17,16 +17,16 @@
   color: rgb(255, 0, 255);
 }
 
-.orange-text4{
+.orange-text4 {
   font-style: italic;
   color: rgb(255, 0, 255);
 }
 
-.orange-text5{
+.orange-text5 {
   color: rgb(255, 0, 255);
 }
 
-.orange-text6{
+.orange-text6 {
   color: rgb(255, 0, 255);
 }
 
@@ -39,7 +39,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fffdfd;
+  /* background: #020000; */
+  background: hsla(0, 0%, 0%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#000764", GradientType=1 );
   transition: 0.5s;
   z-index: 2;
   flex-wrap: wrap;
@@ -56,13 +77,13 @@
 .left-text h2 {
   font-size: 3.8rem;
   font-weight: 600;
-  color: #000000;
-  line-height: 1em;
+  color: #fbfafa;
+  line-height: 1.4em;
 }
 
 .left-text p {
   font-size: 1.5em;
-  color: #000000;
+  color: #fec1c1;
   margin: 28px 0;
   font-weight: 500;
   max-width: 700px;
@@ -93,7 +114,7 @@
     font-size: 3em;
   }
 
-  .bg-image{
+  .bg-image {
     /* flex-wrap: wrap; */
     flex-direction: column;
   }
@@ -114,11 +135,8 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-.button-1 {
-  background-image: linear-gradient(
-    to right,
-    #ff00cc 0%, #00bfff  61%, #ff00cc
-  );
+.custom-button {
+  /* background-image: linear-gradient(to right, #ff00cc 0%, #00bfff 61%, #ff00cc); */
   margin: 10px;
   padding: 12px 20px;
   text-align: center;
@@ -128,11 +146,11 @@
   background-size: 200% auto;
   color: rgb(255, 255, 255);
   border-radius: 22px;
-  display:block;
-  cursor: pointer;  
+  display: block;
+  cursor: pointer;
 }
-
+/* 
 .button-1:hover {
   background-position: right center;
   color: #000000;
-}
+} */
