@@ -18,4 +18,12 @@
     transform: scale(1.05); /* Add a scale effect on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
   }
+  /* Service.css */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
   

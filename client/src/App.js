@@ -13,7 +13,7 @@ const App = () => {
         <Navbar />
         <div className="hero-container">
           {/* <HeroPage /> */}
-          {/* <Service></Service> */}
+          { <Service></Service> }
           {/* <Info></Info> */}
         </div>
       </div>
