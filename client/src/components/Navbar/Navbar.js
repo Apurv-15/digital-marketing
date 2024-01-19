@@ -1,45 +1,32 @@
-import { Component } from "react";
-import { MenuData } from "./MenuData";
-import "./NavBar.css";
+// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 
-class Navbar extends Component {
-  state = {
-    clicked: false,
-  };
-
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
-
-  render() {
-    return (
-      <nav className="NavbarItems">
-        <h1 className="logo">
-          Kahanikars <i className="fab fa-react"></i>
-        </h1>
-        <div className="menu-icons" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i>
-        </div>
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuData.map((item, index) => {
-            return (
-              <li key={index}>
-                <a href={item.url} className={item.cName}>
-                  <i className={item.icon}></i>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
+const Navbar = () => {
+  return (
+    <nav>
+      <div>
+        {/* <Brand /> */}
+      </div>
+      <div>
+        <ul>
           <li>
-            <button className="button-2">SIGN UP</button>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
-      </nav>
-    );
-  }
-}
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
