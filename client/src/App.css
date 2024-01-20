@@ -2,6 +2,9 @@
   text-align: center;
 } */
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 
 .App-header {
@@ -16,7 +19,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: orange !important;
 }
 
 .hero-container {
