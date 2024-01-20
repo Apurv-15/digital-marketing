@@ -35,7 +35,7 @@ const HeroPage = ({ timeline }) => {
             <h2>
               Crafting <span className="orange-text2">Digital </span>
             </h2>
-            <h2>Excellence!</h2>
+            <h2><span className="orange-text3">Business </span>Excellence!</h2>
           </div>
 
           <p ref={(el) => (pText = el)}>
@@ -43,7 +43,7 @@ const HeroPage = ({ timeline }) => {
             services designed to elevate your Brand and expand your reach!!
           </p>
           <Stack direction="row" spacing={2}>
-            <Button variant="contained" className="custom-button">Contained</Button>
+            <Button variant="contained" className="custom-button">Get started</Button>
             {/* Add more buttons or components as needed */}
           </Stack>
         </div>
