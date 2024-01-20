@@ -104,7 +104,7 @@ const ExperienceCard = ({ experience }) => {
         <div className='flex justify-center items-center w-full h-full'>
           <img
             src={experience.icon}
-            alt={experience.company_name}
+            // alt={experience.title}
             className='w-[60%] h-[60%] object-contain'
           />
         </div>
@@ -116,7 +116,7 @@ const ExperienceCard = ({ experience }) => {
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {/* {experience.company_name} */}
         </p>
       </div>
 
@@ -136,7 +136,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Service = () => {
   return (
-    <>
+    <div className="Service_section">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
@@ -156,7 +156,8 @@ const Service = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
+    
   );
 };
 
