@@ -14,12 +14,18 @@ const App = () => {
       <div>
         <Navbar/> 
         <div className="hero-container">
+<<<<<<< HEAD
+          {/* <HeroPage /> */}
+          { <Service></Service> }
+          {/* <Info></Info> */}
+=======
           <Content timeline={tl} />
           <Images timeline={tl} ease={ease} />
           
 
           {/* <Service></Service> */}
           <Info></Info>
+>>>>>>> c04ce8310b2e687946d4bbe93807d4713c31ddf9
         </div>
         <div>
         </div>
