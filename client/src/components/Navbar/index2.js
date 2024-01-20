@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBriefcase, faEnvelope, faFileAlt, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
-import "./Navbar.css";
+import "./NavBar.css";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);

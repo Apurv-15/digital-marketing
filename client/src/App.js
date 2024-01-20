@@ -5,27 +5,23 @@ import Images from "./components/Hero_page/Image/Image.js";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/index2.js";
-import { Info } from "./components/Info page/Info";
+import Mind from "./components/Project_in_mind/Mind.js";
+import { Info } from "./components/Info_page/Info.js";
 const App = () => {
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
+  const darkTheme = true;
   return (
     <Router>
       <div>
         <Navbar/> 
         <div className="hero-container">
-<<<<<<< HEAD
-          {/* <HeroPage /> */}
-          { <Service></Service> }
-          {/* <Info></Info> */}
-=======
-          <Content timeline={tl} />
-          <Images timeline={tl} ease={ease} />
+          {/* <Content timeline={tl} /> */}
+          {/* <Images timeline={tl} ease={ease} /> */}
           
-
+          <Mind/>
           {/* <Service></Service> */}
-          <Info></Info>
->>>>>>> c04ce8310b2e687946d4bbe93807d4713c31ddf9
+          {/* <Info></Info> */}
         </div>
         <div>
         </div>
