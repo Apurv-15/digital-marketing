@@ -136,7 +136,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Service = () => {
   return (
-    <div className="Service_section">
+    <div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
