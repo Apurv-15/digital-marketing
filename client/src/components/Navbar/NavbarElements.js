@@ -49,7 +49,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1285px) {
     display: block;
     position: absolute;
     top: 0;
@@ -72,7 +72,7 @@ export const NavMenu = styled.div`
   /* width: 100vw;
   white-space: nowrap; */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1285px) {
     display: ${({ showNav }) => (showNav ? "flex" : "none")}; /* Updated: Use showNav prop to control display */
     flex-direction: column; /* Added: Stack menu items vertically */
     position: absolute; /* Added: Position the menu absolutely */
@@ -94,7 +94,7 @@ export const NavBtn = styled.nav`
   /* justify-content: flex-end;
   width: 100vw; */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1285px) {
     display: none;
   }
 `;
