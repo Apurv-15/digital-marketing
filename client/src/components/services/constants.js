@@ -116,7 +116,7 @@
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "Product Photography",
       company_name: "Starbucks",
     //   icon: starbucks,
       iconBg: "#383E56",
@@ -129,7 +129,7 @@
       ],
     },
     {
-      title: "React Native Developer",
+      title: "Photography",
       company_name: "Tesla",
     //   icon: tesla,
       iconBg: "#E6DEDD",
@@ -142,7 +142,7 @@
       ],
     },
     {
-      title: "Web Developer",
+      title: "Product Advertisement",
       company_name: "Shopify",
     //   icon: shopify,
       iconBg: "#383E56",
@@ -155,7 +155,7 @@
       ],
     },
     {
-      title: "Full stack Developer",
+      title: "Websites developing",
       company_name: "Meta",
     //   icon: meta,
       iconBg: "#E6DEDD",

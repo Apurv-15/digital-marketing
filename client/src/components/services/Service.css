@@ -26,4 +26,24 @@
   gap: 20px;
 }
 
-  
+body{
+  background: hsla(0, 0%, 0%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(0, 0%, 0%, 1) 65%,
+    hsla(236, 100%, 20%, 1) 100%
+  );
+}
