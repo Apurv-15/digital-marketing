@@ -75,7 +75,6 @@
 
 // export default Service;
 
-
 import React from "react";
 import {
   VerticalTimeline,

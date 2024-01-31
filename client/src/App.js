@@ -1,30 +1,35 @@
 import React from "react";
 import { gsap, Power3 } from "gsap";
-import Content from "./components/Hero_page/HeroPage.js";
-import Images from "./components/Hero_page/Image/Image.js"; 
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar/index2.js";
-import Mind from "./components/Project_in_mind/Mind.js";
-import { Info } from "./components/Info_page/Info.js";
+import Navbar from "./components/Navbar/Navbar.js";
+// import Mind from "./components/Project_in_mind/Mind.js";
+// import { Info } from "./components/Info_page/Info.js";
+// import Service from "./components/services/Service.js";
+// import Content from "./components/Hero_page/HeroPage.js";
+// import Images from "./components/Hero_page/Image/Image.js";
+// import Testimonials from "./components/Testimonials/Testimonials.jsx";
+// import Signup from './components/Signup/Signup'
+// import UserAuthContext from '../src/components/context/UserAuthContext';
+
+let tl = new gsap.timeline();
+let ease = Power3.easeOut;
+const darkTheme = true;
+
 const App = () => {
-  let tl = new gsap.timeline();
-  let ease = Power3.easeOut;
-  const darkTheme = true;
   return (
     <Router>
       <div>
-        <Navbar/> 
+        <Navbar />
         <div className="hero-container">
-          {/* <Content timeline={tl} /> */}
-          {/* <Images timeline={tl} ease={ease} /> */}
-          
-          <Mind/>
-          {/* <Service></Service> */}
-          {/* <Info></Info> */}
-        </div>
-        <div>
-        </div>
+          {/*<Mind />
+          <Service />
+          <Info />
+          <UserAuthContext>
+          <Signup />
+          </UserAuthContext> 
+        <Testimonials/> */}
+          </div>
       </div>
     </Router>
   );
