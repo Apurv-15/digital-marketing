@@ -6,17 +6,16 @@
   font-family: "Poppins", sans-serif;
 }
 .orange-text1 {
-  color: rgb(255, 0, 255);
+  /* color: rgb(255, 0, 255); */
+  /* background: #cf13bc;
+  background: linear-gradient(to right, #cf13bc 1%, #e6bfdf 61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
-
-.orange-text2 {
-  color: rgb(255, 0, 255);
-}
-
-.orange-text3 {
-  color: rgb(255, 0, 255);
-}
-
 
 .showcase {
   /* position: absolute; */
@@ -128,6 +127,7 @@
   margin: 10px;
   padding: 12px 20px;
   text-align: center;
+
   font-size: 22px;
   font-weight: 700;
   transition: 0.5s;

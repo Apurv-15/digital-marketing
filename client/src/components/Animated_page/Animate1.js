@@ -92,16 +92,16 @@ const Animate1 = () => {
     });
   };
 
-  const loadSplineDesign = () => {
-    const app = new Application(canvasRef.current);
-    app.load("https://prod.spline.design/iKbKlaDFSCu-MDIe/scene.splinecode");
-  };
+  // const loadSplineDesign = () => {
+  //   const app = new Application(canvasRef.current);
+  //   app.load("https://prod.spline.design/iKbKlaDFSCu-MDIe/scene.splinecode");
+  // };
 
   return (
     <section>
-      <canvas id="canvas3d" ref={canvasRef} width="100%" height="100%"></canvas>
-      <h1 ref={h1Ref}>Stop being a crumb</h1>
-      <p>Stand out with ZenRecruiter.</p>
+      {/* <canvas id="canvas3d" ref={canvasRef} width="100%" height="100%"></canvas> */}
+      <h1 className="head1" ref={h1Ref}>Stop being a crumb</h1>
+      <p className="para1">Stand out with ZenRecruiter.</p>
     </section>
   );
 };

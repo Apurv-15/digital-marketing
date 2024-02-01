@@ -1,0 +1,45 @@
+
+.add-item-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-item-button {
+    display: flex;
+    align-items: center;
+    border:rgba(0, 0, 0, 0.1);
+    margin: 7rem 7rem;
+    padding: 4rem 4rem; /* Adjust button size */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f66a6a;
+    background-color: #b3defb; /* Default button color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for 3D effect */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-item-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on hover */
+    transform: translateY(2px); /* Slight vertical movement on hover */
+  }
+  
+  .icon {
+    margin-right: 8px; /* Adjust space between icon and text */
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
