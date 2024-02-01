@@ -7,11 +7,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Service from "./components/services/Service.js";
 // import Footer from "./components/Footer/Footer";
 import "./App.css";
-import Navbar from "./components/Navbar/index2.js";
-import Mind from "./components/Project_in_mind/Mind.js";
+// import Navbar from "./components/Navbar/"
+// import Mind from "./components/Project_in_mind/Mind.js";
 import { Info } from "./components/Info_page/Info.js";
-import Animate1 from "./components/Animated_page/Animate1.js";
-import Animate2 from "./components/Animated_page/Animate2.js";
+// import Animate1 from "./components/Animated_page/Animate1.js";
+// import Animate2 from "./components/Animated_page/Animate2.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product2 from "./components/Features/ProductPage2/Product2.js";
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="hero-container">
           <Content timeline={tl} />
           <Images timeline={tl} ease={ease} />
