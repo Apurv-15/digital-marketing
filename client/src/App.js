@@ -2,7 +2,7 @@ import React from "react";
 import { gsap, Power3 } from "gsap";
 import Content from "./components/Hero_page/HeroPage.js";
 import Images from "./components/Hero_page/Image/Image.js";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Service from "./components/services/Service.js";
 // import Footer from "./components/Footer/Footer";

@@ -4,6 +4,7 @@ import App from './App';
 import { ThemeProvider, createTheme } from '@mui/material/styles'; // Import createTheme
 import CssBaseline from '@mui/material/CssBaseline';
 
+
 const theme = createTheme(); // Create a Material-UI theme
 
 ReactDOM.render(
