@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
 
 body {
   margin: 0;
@@ -15,7 +15,7 @@ iframe {
   right: 0;
 }
 
-h1 {
+.head1 {
   font-family: "Playfair Display";
   font-size: 4rem;
   margin-top: 3em;
@@ -23,24 +23,24 @@ h1 {
   color: white;
 }
 
-p {
+.para1 {
   font-size: 1.6rem;
   font-weight: 300;
   margin: 0;
   color: white;
 }
 
-h1,
-p {
+.head1,
+.para1 {
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.parallax-section { 
+.parallax-section {
   position: absolute;
   height: 100vh;
   overflow: hidden;
-}
+} */
 
 /* #canvas3d {
   position: absolute; 
@@ -50,3 +50,20 @@ p {
   height: 100%;
   z-index: -1; /* Behind the text */
 /* } */
+
+/* SplineCanvas.css */
+
+.spline-canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.spline-canvas {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

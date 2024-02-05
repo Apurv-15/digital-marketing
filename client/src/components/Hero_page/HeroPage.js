@@ -33,9 +33,9 @@ const HeroPage = ({ timeline }) => {
               <span className="orange-text1">Elevating </span>Experiences
             </h2>
             <h2>
-              Crafting <span className="orange-text2">Digital </span>
+              Crafting <span className="orange-text1">Digital </span>
             </h2>
-            <h2><span className="orange-text3">Business </span>Excellence!</h2>
+            <h2><span className="orange-text1">Business </span>Excellence!</h2>
           </div>
 
           <p ref={(el) => (pText = el)}>
