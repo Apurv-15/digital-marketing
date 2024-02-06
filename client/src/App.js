@@ -5,8 +5,8 @@ import Images from "./components/Hero_page/Image/Image.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Service from "./components/services/Service.js";
-// import Footer from "./components/Footer/Footer";
-import "./App.css";
+// // import Footer from "./components/Footer/Footer";
+// import "./App.css";
 // import Navbar from "./components/Navbar/"
 // import Mind from "./components/Project_in_mind/Mind.js";
 import { Info } from "./components/Info_page/Info.js";
@@ -14,6 +14,10 @@ import { Info } from "./components/Info_page/Info.js";
 // import Animate2 from "./components/Animated_page/Animate2.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product2 from "./components/Features/ProductPage2/Product2.js";
+import Product3 from "./components/Features/ProductPage3/Product3.js";
+import SignUp from "./components/Signup/Signup";
+import UserAuthContext from "./components/Auth0/UserAuthContext.js";
+
 const App = () => {
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
@@ -23,20 +27,22 @@ const App = () => {
       <div>
         {/* <Navbar /> */}
         <div className="hero-container">
-          <Content timeline={tl} />
-          <Images timeline={tl} ease={ease} />
-          {/* <Product1 /> */}
+          {/* <Content timeline={tl} /> */}
+          {/* <Images timeline={tl} ease={ease} /> */}
 
-          {/* <Mind/> */}
           {/* <Animate1 /> */}
           {/* <Animate2 /> */}
-          <Service></Service>
-          <Info></Info>
+          {/* <Service></Service> */}
+          {/* <Info></Info> */}
           {/* <Footer/> */}
-          {/* <Routes>
-            <Route path="/" element={<Product1 />} />
-            <Route path="/product2" element={<Product2 />} />
-          </Routes> */}
+          <UserAuthContext>
+            <Routes>
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/productadd" element={<Product1 />} />
+              <Route path="/product2" element={<Product2 />} />
+              {/* <Route path="/product3" element={<Product3 />} /> */}
+            </Routes>
+          </UserAuthContext>
         </div>
         <div></div>
       </div>
