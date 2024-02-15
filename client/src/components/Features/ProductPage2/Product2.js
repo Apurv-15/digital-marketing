@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import "./Product2.css";
 import { useNavigate } from "react-router-dom";
 import { db } from "../../Firebase/firebase.config";
-import { collection, addDoc, doc, setDoc } from "firebase/firestore";
+import { collection, doc, setDoc } from "firebase/firestore";
 import { useAuth } from "../../Auth0/UserAuthContext";
+import "./Product2.css";
 
 const Product2 = () => {
   const navigate = useNavigate();
   const { currentuser } = useAuth();
-  console.log("Current User in Product2:", currentuser);
+
   const [selectedValue, setSelectedValue] = useState("");
   const [productName, setProductName] = useState("");
   const [locationName, setLocationName] = useState("");
-  const [Budget1, setBudgetName] = useState("");
+  const [budget, setBudget] = useState("");
 
   const handleDropDown = (event) => {
     setSelectedValue(event.target.value);
@@ -25,36 +25,36 @@ const Product2 = () => {
   const handleLocation = (event) => {
     setLocationName(event.target.value);
   };
-  const handlePriceNameChange = (event) => {
-    setBudgetName(event.target.value);
+
+  const handleBudgetChange = (event) => {
+    setBudget(event.target.value);
   };
 
   const handleClickButton = async (e) => {
     e.preventDefault();
 
     try {
-      const userName = currentuser?.displayName;
+      // Get user email from Auth0
+      const userEmail = currentuser?.email;
 
-      if (!userName) {
-        console.error("User name is undefined or empty.");
-        return;
-      }
-
-      const userCollectionRef = collection(db, "users", userName); // Update collection path
-
+      // Construct Firestore collection references
+      const userCollectionRef = collection(db, userEmail);
       const productDocRef = doc(userCollectionRef, productName);
 
+      // Set document data
       await setDoc(productDocRef, {
         ageGroup: selectedValue,
         location: locationName,
-        Budget: Budget1,
+        budget: budget,
       });
 
+      // Navigate to the next page
       navigate("/product3", { replace: true });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
   };
+
   return (
     <section className="main_section">
       <div className="form__1">
@@ -87,28 +87,28 @@ const Product2 = () => {
               </option>
               <option value="10">For children</option>
               <option value="20">For adults</option>
-              <option value="30">For all age group</option>
+              <option value="30">For all age groups</option>
             </select>
 
             <label htmlFor="Product_Name">Advertisement Location</label>
             <input
               className="first_field"
               type="text"
-              id="product-name"
+              id="product-location"
               value={locationName}
               onChange={handleLocation}
               placeholder="Enter Location..."
               required
             />
-            <label htmlFor="Product_Name">Enter Budget</label>
 
+            <label htmlFor="Product_Name">Enter Budget</label>
             <div className="custom-textfield">
               <input
                 className="first_field"
                 type="text"
-                id="product-name"
-                value={Budget1}
-                onChange={handlePriceNameChange}
+                id="product-budget"
+                value={budget}
+                onChange={handleBudgetChange}
                 placeholder="Enter Maximum budget"
                 required
               />

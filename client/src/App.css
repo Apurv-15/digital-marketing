@@ -2,12 +2,11 @@
   text-align: center;
 } */
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-
- .App-header {
+.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -16,7 +15,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} 
+}
 
 .App-link {
   color: orange !important;
@@ -28,7 +27,7 @@
   scroll-behavior: smooth; /* Add smooth scrolling behavior */
 }
 
-body{
+/* body{
   background: hsla(0, 0%, 0%, 1);
 
   background: radial-gradient(
@@ -49,4 +48,4 @@ body{
     hsla(236, 100%, 20%, 1) 100%
   );
 
-}
+} */

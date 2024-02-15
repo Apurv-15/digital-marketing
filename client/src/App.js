@@ -1,40 +1,66 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap, Power3 } from "gsap";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
+
 import Content from "./components/Hero_page/HeroPage.js";
 import Images from "./components/Hero_page/Image/Image.js";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Service from "./components/services/Service.js";
-// // import Footer from "./components/Footer/Footer";
-// import "./App.css";
-// import Navbar from "./components/Navbar/"
-// import Mind from "./components/Project_in_mind/Mind.js";
 import { Info } from "./components/Info_page/Info.js";
-// import Animate1 from "./components/Animated_page/Animate1.js";
-// import Animate2 from "./components/Animated_page/Animate2.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product2 from "./components/Features/ProductPage2/Product2.js";
-import Product3 from "./components/Features/ProductPage3/Product3.js";
 import SignUp from "./components/Signup/Signup";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
+import Animate1 from "./components/Animated_page/Animate1.js";
+import Animate2 from "./components/Animated_page/Animate2.js";
+import "./App.css";
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
+
+  useEffect(() => {
+    // Set up ScrollTrigger animations
+    gsap.from(".animate1", {
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        trigger: ".animate1",
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: true, // Smooth animation while scrolling
+      },
+    });
+
+    gsap.from(".animate2", {
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        trigger: ".animate2",
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: true, // Smooth animation while scrolling
+      },
+    });
+
+    // Add more ScrollTrigger animations as needed
+  }, []);
+
   const darkTheme = true;
+
   return (
     <Router>
       <div>
-        {/* <Navbar /> */}
         <div className="hero-container">
           {/* <Content timeline={tl} /> */}
           {/* <Images timeline={tl} ease={ease} /> */}
 
-          {/* <Animate1 /> */}
-          {/* <Animate2 /> */}
+          {/* <Animate1 className="animate1" /> */}
+          {/* <Animate2 className="animate2" /> */}
           {/* <Service></Service> */}
           {/* <Info></Info> */}
-          {/* <Footer/> */}
+          {/* <Footer /> */}
           <UserAuthContext>
             <Routes>
               <Route path="/signup" element={<SignUp />} />

@@ -186,7 +186,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1; /* Place the background behind other content */
+  z-index: 0;
   color: #999;
   font: 400 16px/1.5 "exo", "ubuntu", "segoe ui", "helvetica", "arial",
     sans-serif;
