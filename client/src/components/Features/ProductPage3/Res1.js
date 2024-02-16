@@ -1,22 +1,25 @@
-// Rec.js
+// Res1.js
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import CardMedia from "@mui/material/CardMedia";
-import Checkbox from "@mui/material/Checkbox";
-import Button from "@mui/material/Button"; // Import Button component
-import Rec2 from "./Res2";
-import Rec3 from "./Res3";
-import Rec4 from "./Res4";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+  IconButton,
+} from "@mui/material";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import "./Res.css";
 
 const Res1 = () => {
   const [checked1, setChecked1] = useState(false);
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -29,59 +32,187 @@ const Res1 = () => {
     }
   };
 
+  const handleCardSelect = (index) => {
+    setSelectedCard(index);
+  };
+
   return (
     <>
-      <div className="body">
-        <Card className="card1" sx={{ maxWidth: 300 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://png.pngtree.com/element_our/md/20180630/md_5b37de3bde2d6.jpg"
-          />
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Text
-            </Typography>
-            <Checkbox
-              checked={checked1}
-              onChange={(e) => setChecked1(e.target.checked)}
-            />
-          </CardContent>
-        </Card>
+      <div className="body_1">
+        <form action="javascript:void(0)">
+          <fieldset>
+            <legend>Enter Product information</legend>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "left",
+                marginLeft: "3.9rem",
+                marginTop: "0.1rem",
+                padding: "0.1rem",
+              }}
+            >
+              <Card
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  width: "11rem",
+                  height: "12rem",
+                  margin: "0 1rem", // Adjusted margin for space between cards
+                  border: selectedCard === 0 ? ".1rem solid green" : "none",
+                }}
+              >
+                <CardActionArea onClick={() => handleCardSelect(0)}>
+                  <div style={{ position: "relative" }}>
+                    <CardMedia
+                      component="img"
+                      height="110"
+                      image="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"
+                      alt="green iguana"
+                    />
+                    {selectedCard === 0 && (
+                      <IconButton
+                        sx={{
+                          position: "absolute",
+                          top: 8,
+                          right: 8,
+                          backgroundColor: "white",
+                        }}
+                        size="small"
+                      >
+                        <CheckCircleIcon sx={{ color: "green" }} />
+                      </IconButton>
+                    )}
+                  </div>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      textAlign="center"
+                    >
+                      Image
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ textAlign: "center" }}
+                    >
+                      lorem
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
 
-        <Card className="card1" sx={{ maxWidth: 300 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://banner2.cleanpng.com/20180628/ovp/kisspng-google-adwords-pay-per-click-adsense-google-logo-a-google-adwords-banner-5b348665358075.2906855315301689332192.jpg"
-          />
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Image
-            </Typography>
-            <Checkbox
-              checked={checked2}
-              onChange={(e) => setChecked2(e.target.checked)}
-            />
-          </CardContent>
-        </Card>
+              <Card
+                sx={{
+                  width: "11rem",
+                  height: "12rem",
+                  margin: "0 0.5rem",
+                  border: selectedCard === 1 ? ".1rem solid green" : "none",
+                }}
+              >
+                <CardActionArea onClick={() => handleCardSelect(1)}>
+                  <div style={{ position: "relative" }}>
+                    <CardMedia
+                      component="img"
+                      height="110"
+                      image="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"
+                      alt="green iguana"
+                    />
+                    {selectedCard === 1 && (
+                      <IconButton
+                        sx={{
+                          position: "absolute",
+                          top: 8,
+                          right: 8,
+                          backgroundColor: "white",
+                        }}
+                        size="small"
+                      >
+                        <CheckCircleIcon sx={{ color: "green" }} />
+                      </IconButton>
+                    )}
+                  </div>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      textAlign="center"
+                    >
+                      Text
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ textAlign: "center" }}
+                    >
+                      lorem
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
 
-        <Card className="card1" sx={{ maxWidth: 300 }}>
-          <CardMedia sx={{ height: 140 }} image="kahani.png" />
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Video
-            </Typography>
-            <Checkbox
-              checked={checked3}
-              onChange={(e) => setChecked3(e.target.checked)}
-            />
-          </CardContent>
-        </Card>
-      </div>
-
-      <div className="button-container">
-        <Button variant="contained" onClick={handleButtonClick}>
-          Redirect
-        </Button>
+              <Card
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  width: "11rem",
+                  height: "12rem",
+                  margin: "0 0.5rem",
+                  border: selectedCard === 2 ? ".1rem solid green" : "none",
+                }}
+              >
+                <CardActionArea onClick={() => handleCardSelect(2)}>
+                  <div style={{ position: "relative" }}>
+                    <CardMedia
+                      component="img"
+                      height="110"
+                      image="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"
+                      alt="green iguana"
+                    />
+                    {selectedCard === 2 && (
+                      <IconButton
+                        sx={{
+                          position: "absolute",
+                          top: 2,
+                          right: 8,
+                          backgroundColor: "white",
+                        }}
+                        size="small"
+                      >
+                        <CheckCircleIcon sx={{ color: "green" }} />
+                      </IconButton>
+                    )}
+                  </div>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      textAlign="center"
+                    >
+                      Video
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ textAlign: "center" }}
+                    >
+                      lorem
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </div>
+            <div className="button-container" style={{ marginTop: "20px" }}>
+              <Button variant="contained" onClick={handleButtonClick}>
+                Next
+              </Button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </>
   );
