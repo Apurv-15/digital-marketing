@@ -1,0 +1,38 @@
+/* Rec.css */
+
+.body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card1 {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 20px;
+    box-shadow: 5px 5px 20px black !important;
+    background-color: #333 !important;
+    color: white !important; /* Use !important to ensure priority */
+    border-radius: 20px;
+  }
+  
+  .card1-media {
+    height: 140px;
+  }
+  
+  .card1-content {
+    color: #f0f0f0 !important; /* Use !important to ensure priority */
+  }
+  
+  /* Add styles for checkboxes */
+  .MuiCheckbox-root {
+    color: white !important; /* Change checkbox color to white */
+  }
+  
+  .card1:hover {
+    transform: translateY(-5px); /* Apply slight elevation on hover */
+  }
+  

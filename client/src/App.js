@@ -13,6 +13,10 @@ import SignUp from "./components/Signup/Signup";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
 import Animate1 from "./components/Animated_page/Animate1.js";
 import Animate2 from "./components/Animated_page/Animate2.js";
+import Res1 from "./components/Features/ProductPage3/Res1.js";
+import Res2 from "./components/Features/ProductPage3/Res2.js";
+import Res3 from "./components/Features/ProductPage3/Res3.js";
+import Res4 from "./components/Features/ProductPage3/Res4.js";
 import "./App.css";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,6 +70,11 @@ const App = () => {
               <Route path="/signup" element={<SignUp />} />
               <Route path="/productadd" element={<Product1 />} />
               <Route path="/product2" element={<Product2 />} />
+              <Route path="/rec1" element={<Res1 />} />
+
+              <Route path="/rec2" element={<Res2 />} />
+              <Route path="/rec3" element={<Res3 />} />
+              <Route path="/rec4" element={<Res4 />} />
               {/* <Route path="/product3" element={<Product3 />} /> */}
             </Routes>
           </UserAuthContext>
