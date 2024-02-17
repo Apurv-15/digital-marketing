@@ -17,6 +17,7 @@ import Res1 from "./components/Features/ProductPage3/Res1.js";
 import Res2 from "./components/Features/ProductPage3/Res2.js";
 import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
+import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 import "./App.css";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,6 +58,7 @@ const App = () => {
     <Router>
       <div>
         <div className="hero-container">
+          <MouseTrial />
           {/* <Content timeline={tl} /> */}
           {/* <Images timeline={tl} ease={ease} /> */}
 

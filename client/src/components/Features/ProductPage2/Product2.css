@@ -1,29 +1,39 @@
-/* Reset some default styles */
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply global styling */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background: var(--greyLight-1);
 }
 
-/* Fieldset styling */
 fieldset {
-  width: 60rem;
-  padding: 6rem;
+  width: 68rem;
+  padding: 4rem;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background-color: #fffdfd;
+  margin: 0 auto; /* Center the fieldset horizontally */
 }
 
-/* Legend styling */
 legend {
   display: flex;
   align-items: center;
@@ -33,7 +43,6 @@ legend {
   text-align: center;
 }
 
-/* Form container styling */
 .form__1 {
   display: flex;
   align-items: center;
@@ -42,12 +51,10 @@ legend {
   margin-top: 8rem;
 }
 
-/* Space between fieldsets */
 form fieldset {
   margin-bottom: 20px;
 }
 
-/* Text field styling */
 .first_field,
 .select_1 {
   padding: 12px;
@@ -57,53 +64,45 @@ form fieldset {
   border-radius: 4px;
   margin-top: 2px;
   font-size: 16px;
-  transition: border-color 0.3s ease-in-out; /* Smooth transition on border color change */
+  transition: border-color 0.3s ease-in-out;
 }
 
 .first_field:focus,
 .select_1:focus {
   outline: none;
-  border-color: #6d9eeb; /* Highlight border color on focus */
+  border-color: #6d9eeb;
 }
 
-/* Custom textfield container */
-
-/* Button styling */
 .button_1 {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  padding: 12px 20px; /* Adjust padding as needed */
+  padding: 12px 20px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   margin-top: 4rem;
-  border: 2px solid #4caf50; /* Border color */
+  border: 2px solid #4caf50;
   border-radius: 4px;
-  background-color: #4caf50; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #4caf50;
+  color: #fff;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
 }
 
 .button_1:hover {
-  background-color: #45a049; /* Hover background color */
-  border-color: #45a049; /* Hover border color */
-  color: #fff; /* Hover text color */
+  background-color: #45a049;
+  border-color: #45a049;
+  color: #fff;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 1040px) {
   fieldset {
     width: 100%;
-    padding: 6rem; /* Adjust padding as needed */
+    padding: 6rem;
   }
-
-  /* .legend {
-      height: auto;
-    } */
 
   .first_field,
   .select_1 {
@@ -114,7 +113,25 @@ form fieldset {
   .button_1 {
     width: 100%;
     font-size: 14px;
-    padding: 10px 16px; /* Adjust padding as needed */
+    padding: 10px 16px;
+  }
+
+  .container_1 {
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between;
+    align-items: center; /* Optional: Center the content horizontally */
+  }
+
+  .lottie-animation {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Change to column layout */
+  }
+
+  .product_info {
+    flex-direction: row;
+    width: 100%; /* Make the product info full width */
+    padding-left: 0; /* No need for left padding on smaller screens */
   }
 }
 
@@ -133,12 +150,6 @@ label[for="Product_Name"] {
   --blueQueen: rgba(69, 105, 144, 1);
   --redFire: rgba(244, 91, 105, 1);
 }
-
-/* Fonts
-body {
-  background-color: var(--redFire);
-  font-family: 'Asap', sans-serif;
-} */
 
 .login1 {
   overflow: hidden;
@@ -180,6 +191,7 @@ body {
   background-color: rgba(var(--greenSeaweed), 0.2);
   animation: wawes 7s infinite;
 }
+
 .main_section {
   position: fixed;
   top: 0;
@@ -190,8 +202,9 @@ body {
   color: #999;
   font: 400 16px/1.5 "exo", "ubuntu", "segoe ui", "helvetica", "arial",
     sans-serif;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
-    repeat 0 0;
+  /* background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0; */
+  background: var(--greyLight-1);
   animation: bg-scrolling-reverse 0.92s infinite;
   animation-timing-function: linear;
 }
@@ -200,4 +213,27 @@ body {
   100% {
     background-position: 50px 50px;
   }
+}
+
+.lottie-animation {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 2rem;
+}
+
+.container_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

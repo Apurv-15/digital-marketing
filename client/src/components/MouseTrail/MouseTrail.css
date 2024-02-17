@@ -1,0 +1,9 @@
+/* Add this to your CSS file */
+.trail {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: rgb(160, 190, 5); /* Set a transparent background */
+  pointer-events: none; /* Allow clicks to pass through */
+}
