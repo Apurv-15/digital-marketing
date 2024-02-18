@@ -23,12 +23,12 @@ const Res1 = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    if (checked1) {
+    if (selectedCard === 0) {
       navigate("/res2", { replace: true });
-    } else if (checked2) {
-      navigate("/rec3", { replace: true });
-    } else if (checked3) {
-      navigate("/rec4", { replace: true });
+    } else if (selectedCard === 1) {
+      navigate("/res3", { replace: true });
+    } else if (selectedCard === 2) {
+      navigate("/res4", { replace: true });
     }
   };
 

@@ -9,6 +9,7 @@ import Service from "./components/services/Service.js";
 import { Info } from "./components/Info_page/Info.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product2 from "./components/Features/ProductPage2/Product2.js";
+import Product22 from "./components/Features/ProductPage2/Product22.js";
 import SignUp from "./components/Signup/Signup";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
 import Animate1 from "./components/Animated_page/Animate1.js";
@@ -57,32 +58,33 @@ const App = () => {
   return (
     <Router>
       <div>
-        <div className="hero-container">
-          <MouseTrial />
-          {/* <Content timeline={tl} /> */}
-          {/* <Images timeline={tl} ease={ease} /> */}
+        {/* <div className="hero-container"> */}
+        <MouseTrial />
+        {/* <Content timeline={tl} /> */}
+        {/* <Images timeline={tl} ease={ease} /> */}
 
-          {/* <Animate1 className="animate1" /> */}
-          {/* <Animate2 className="animate2" /> */}
-          {/* <Service></Service> */}
-          {/* <Info></Info> */}
-          {/* <Footer /> */}
-          <UserAuthContext>
-            <Routes>
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="/productadd" element={<Product1 />} />
-              <Route path="/product2" element={<Product2 />} />
-              <Route path="/rec1" element={<Res1 />} />
+        {/* <Animate1 className="animate1" /> */}
+        {/* <Animate2 className="animate2" /> */}
+        {/* <Service></Service> */}
+        {/* <Info></Info> */}
+        {/* <Footer /> */}
+        <UserAuthContext>
+          <Routes>
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/productadd" element={<Product1 />} />
+            {/* <Route path="/product2" element={<Product2 />} /> */}
+            <Route path="/product22" element={<Product22 />} />
+            <Route path="/res1" element={<Res1 />} />
 
-              <Route path="/rec2" element={<Res2 />} />
-              <Route path="/rec3" element={<Res3 />} />
-              <Route path="/rec4" element={<Res4 />} />
-              {/* <Route path="/product3" element={<Product3 />} /> */}
-            </Routes>
-          </UserAuthContext>
-        </div>
-        <div></div>
+            <Route path="/res2" element={<Res2 />} />
+            <Route path="/res3" element={<Res3 />} />
+            <Route path="/res4" element={<Res4 />} />
+            {/* <Route path="/product3" element={<Product3 />} /> */}
+          </Routes>
+        </UserAuthContext>
       </div>
+      <div></div>
+      {/* </div> */}
     </Router>
   );
 };

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { db } from "../../Firebase/firebase.config";
 import { collection, doc, setDoc } from "firebase/firestore";
 import { useAuth } from "../../Auth0/UserAuthContext";
-import "./Product2.css";
+// import "./Product2.css";
 import animationData from "../../Images and video/Animation_for_forms.json";
 import Lottie from "react-lottie";
 
@@ -91,7 +91,7 @@ const Product2 = () => {
 
                 <label htmlFor="Product_Name">Target Audience</label>
                 <select
-                  className="select_1"
+                  className="select_12"
                   value={selectedValue}
                   onChange={handleDropDown}
                   required
