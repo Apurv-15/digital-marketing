@@ -1,0 +1,50 @@
+.Details {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    padding: 2rem;
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  .main-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .percentage {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .stat-text {
+    margin-top: 0.5rem;
+  }
+  
+  .footer {
+    padding: 1rem;
+    background-color: #34495e;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
