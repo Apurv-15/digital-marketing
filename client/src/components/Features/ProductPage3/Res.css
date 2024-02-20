@@ -1,0 +1,42 @@
+/* Rec.css */
+
+/* .body_1 {
+  display: flex;
+  
+  margin-top: 20rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+} */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  /* height: -200vh; */
+}
+
+.body_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  color: #999;
+  font: 400 16px/1.5 "exo", "ubuntu", "segoe ui", "helvetica", "arial",
+    sans-serif;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0;
+  animation: bg-scrolling-reverse 0.92s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}

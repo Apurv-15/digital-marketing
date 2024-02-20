@@ -2,10 +2,9 @@
   text-align: center;
 } */
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .App-header {
   background-color: #282c34;
@@ -28,7 +27,7 @@
   scroll-behavior: smooth; /* Add smooth scrolling behavior */
 }
 
-body{
+/* body{
   background: hsla(0, 0%, 0%, 1);
 
   background: radial-gradient(
@@ -49,4 +48,4 @@ body{
     hsla(236, 100%, 20%, 1) 100%
   );
 
-}
+} */

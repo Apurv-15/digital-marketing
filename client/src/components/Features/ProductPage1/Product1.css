@@ -1,0 +1,57 @@
+.add-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  height: 100vh; /* Adjust the height as needed */
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+  background-size: cover;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.add-item-button {
+  display: flex;
+  align-items: center;
+  border: none; /* Remove border */
+  margin: 2rem; /* Adjust margin */
+  padding: 2rem; /* Adjust button size */
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff; /* Set text color */
+  background-color: #f66a6a; /* Set button color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.add-item-button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.empty-text {
+  color: #fff;
+  font-size: 18px;
+  /* Add any additional styling for the text */
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-right: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
