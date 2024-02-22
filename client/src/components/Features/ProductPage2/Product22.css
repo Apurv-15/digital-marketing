@@ -1,0 +1,198 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.section1_1 {
+  /* box-sizing: border-box; */
+  font-size: 62.5%;
+  overflow-y: scroll;
+  background: var(--greyLight-1);
+
+  @media screen and (min-width: 900px) {
+    font-size: 75%;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: var(--greyLight-1);
+}
+
+.components {
+  width: 75rem;
+  height: 45rem;
+  border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
+    -0.2rem -0.2rem 1.8rem var(--white);
+  /* padding: 4rem; */
+  display: grid;
+  grid-template-columns: 17.6rem 19rem 20.4rem;
+  grid-template-rows: repeat(autofit, min-content);
+  grid-column-gap: 5rem;
+  /* grid-row-gap: 2.5rem; */
+  align-items: center;
+}
+
+/* Your specific styles here */
+
+.form__input {
+  width: 400%;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1.4rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    inset -0.1rem -0.1rem 0.2rem var(--greyDark);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark);
+}
+
+.form__input::placeholder {
+  color: var(--greyLight-3);
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+/* TEXTFIELD */
+.textfield {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.button_1 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.button_1:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+  color: #fff;
+}
+
+@media (max-width: 1040px) {
+  fieldset {
+    width: 100%;
+    padding: 6rem;
+  }
+
+  .first_field,
+  .select_1 {
+    padding: 2rem;
+    font-size: 14px;
+  }
+
+  .button_1 {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .container_1 {
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between;
+    align-items: center; /* Optional: Center the content horizontally */
+  }
+
+  .lottie-animation {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Change to column layout */
+  }
+
+  .product_info {
+    flex-direction: row;
+
+    padding-left: 0; /* No need for left padding on smaller screens */
+  }
+}
+
+.Product_Name {
+  margin-top: 100px;
+}
+
+label[for="Product_Name"] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 500;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.lottie-animation {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.select_1 {
+  width: 400%;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1.4rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    inset -0.1rem -0.1rem 0.2rem var(--greyDark);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark);
+}

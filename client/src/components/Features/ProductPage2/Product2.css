@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset some default styles */
 * {
     margin: 0;
@@ -180,3 +181,256 @@
     background-color: rgba(var(--greenSeaweed), 0.2);
     animation: wawes 7s infinite;
   }
+=======
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  /* background-color: #f0f0f0; */
+  background: var(--greyLight-1);
+}
+
+fieldset {
+  width: 68rem;
+  padding: 4rem;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fffdfd;
+  margin: 0 auto;
+  width: 68rem;
+
+  /* border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
+    -0.2rem -0.2rem 1.8rem var(--white);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 17.6rem 19rem 20.4rem;
+  grid-template-rows: repeat(autofit, min-content);
+  grid-column-gap: 5rem;
+  grid-row-gap: 2.5rem;
+  align-items: center; */
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 1rem;
+  height: 5vh;
+  text-align: center;
+}
+
+.form__1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+
+.first_field,
+.select_12 {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 2px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.first_field:focus,
+.select_12:focus {
+  outline: none;
+  border-color: #6d9eeb;
+}
+
+.button_1 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 4rem;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.button_1:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+  color: #fff;
+}
+
+@media (max-width: 1040px) {
+  fieldset {
+    width: 100%;
+    padding: 6rem;
+  }
+
+  .first_field,
+  .select_12 {
+    padding: 2rem;
+    font-size: 14px;
+  }
+
+  .button_1 {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .container_1 {
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between;
+    align-items: center; /* Optional: Center the content horizontally */
+  }
+
+  .lottie-animation {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Change to column layout */
+  }
+
+  .product_info {
+    flex-direction: row;
+    width: 100%; /* Make the product info full width */
+    padding-left: 0; /* No need for left padding on smaller screens */
+  }
+}
+
+.Product_Name {
+  margin-top: 100px;
+}
+
+label[for="Product_Name"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+:root {
+  --greenSeaweed: rgba(2, 128, 144, 1);
+  --blueQueen: rgba(69, 105, 144, 1);
+  --redFire: rgba(244, 91, 105, 1);
+}
+
+.login1 {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(var(--greenSeaweed), 0.2);
+}
+
+.login1::before,
+.login1::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+
+.login1::before {
+  left: 40%;
+  bottom: -130%;
+  /* background-color: rgba(var(--blueQueen), 0.15); */
+  animation: wawes 6s infinite linear;
+}
+
+.login1::after {
+  left: 35%;
+  bottom: -125%;
+  /* background-color: rgba(var(--greenSeaweed), 0.2); */
+  animation: wawes 7s infinite;
+}
+
+.main_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  color: #999;
+  font: 400 16px/1.5 "exo", "ubuntu", "segoe ui", "helvetica", "arial",
+    sans-serif;
+  /* background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
+    repeat 0 0; */
+  background: var(--greyLight-1);
+  animation: bg-scrolling-reverse 0.92s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.lottie-animation {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 2rem;
+}
+
+.container_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+>>>>>>> 7b00dd41019333dd2931840a2e64a1e2132516bf
