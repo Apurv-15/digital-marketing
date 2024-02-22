@@ -16,6 +16,7 @@ const UserAuthContext = ({ children }) => {
   const [error, setError] = useState("");
   const [currentuser, setuser] = useState();
   const [isSignUpSuccess, setIsSignUpSuccess] = useState(false);
+  const [FullName] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -74,6 +75,7 @@ const UserAuthContext = ({ children }) => {
     SignUp,
     error,
     currentuser,
+    FullName,
   };
 
   return <userContext.Provider value={value}>{children}</userContext.Provider>;

@@ -76,7 +76,7 @@ const Signup = () => {
             }
 
             <form onSubmit={SubmitHandler} className="form">
-                <h2>Registration Form</h2>
+                <h2>Signup with valid credentials!</h2>
                 <div className="inputfield">
                     <input type="text" placeholder="UserName" value={user.FullName} name='FullName' onChange={UserHandler} />
                 </div>
@@ -93,7 +93,7 @@ const Signup = () => {
                 <div className="inputfield">
                     <input type="submit" />
                 </div>
-                <p className="forget">Don't have an account? <a href="">Sign up </a></p>
+                <p className="forget">Already have an account? <a href="">Login</a></p>
             </form>
 
         </div>
@@ -101,3 +101,4 @@ const Signup = () => {
 }
 
 export default Signup
+
