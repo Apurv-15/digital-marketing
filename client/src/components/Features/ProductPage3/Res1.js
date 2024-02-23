@@ -1,7 +1,5 @@
-// Res1.js
-
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   Card,
   CardActionArea,
@@ -12,30 +10,58 @@ import {
   IconButton,
 } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { setDoc } from "firebase/firestore";
 import "./Res.css";
 
 const Res1 = () => {
-  const [checked1, setChecked1] = useState(false);
-  const [checked2, setChecked2] = useState(false);
-  const [checked3, setChecked3] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-
   const navigate = useNavigate();
+  const location = useLocation();
+  
 
-  const handleButtonClick = () => {
-    if (selectedCard === 0) {
-      navigate("/res2", { replace: true });
-    } else if (selectedCard === 1) {
-      navigate("/res3", { replace: true });
-    } else if (selectedCard === 2) {
-      navigate("/res4", { replace: true });
+  const productName = location.state?.productName;
+  const locationName = location.state?.locationName;
+  const ageGroup = location.state?.ageGroup;
+  const budget = location.state?.budget;
+
+  const handleButtonClick = async () => {
+    if (selectedCard !== null) {
+      var cardData;
+      if (selectedCard === 0) {
+        cardData = "Image";
+      } else if (selectedCard === 1) {
+        cardData = "Text";
+      } else if (selectedCard === 2) {
+        cardData = "Video";
+      }
+
+      try {
+        // Now, navigate to the next page
+        if (selectedCard === 0) {
+          navigate("/res2", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        } else if (selectedCard === 1) {
+          navigate("/res3", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        } else if (selectedCard === 2) {
+          navigate("/res4", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        }
+      } catch (error) {
+        console.error("Error updating document: ", error);
+      }
     }
   };
 
   const handleCardSelect = (index) => {
     setSelectedCard(index);
   };
-
   return (
     <>
       <div className="body_1">
@@ -52,13 +78,14 @@ const Res1 = () => {
                 padding: "0.1rem",
               }}
             >
+              {/* Card 1 */}
               <Card
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
                   width: "11rem",
                   height: "12rem",
-                  margin: "0 1rem", // Adjusted margin for space between cards
+                  margin: "0 1rem",
                   border: selectedCard === 0 ? ".1rem solid green" : "none",
                 }}
               >
@@ -98,12 +125,13 @@ const Res1 = () => {
                       color="text.secondary"
                       sx={{ textAlign: "center" }}
                     >
-                      lorem
+                      Lorem Ipsum
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
 
+              {/* Card 2 */}
               <Card
                 sx={{
                   width: "11rem",
@@ -148,12 +176,13 @@ const Res1 = () => {
                       color="text.secondary"
                       sx={{ textAlign: "center" }}
                     >
-                      lorem
+                      Lorem Ipsum
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
 
+              {/* Card 3 */}
               <Card
                 sx={{
                   display: "flex",
@@ -200,12 +229,14 @@ const Res1 = () => {
                       color="text.secondary"
                       sx={{ textAlign: "center" }}
                     >
-                      lorem
+                      Lorem Ipsum
                     </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </div>
+
+            {/* Button Container */}
             <div className="button-container" style={{ marginTop: "20px" }}>
               <Button variant="contained" onClick={handleButtonClick}>
                 Next

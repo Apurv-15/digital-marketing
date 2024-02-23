@@ -1,11 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
+import { useNavigate, useLocation } from "react-router-dom";
+import { db } from "../../Firebase/firebase.config";
+import { collection, doc, setDoc } from "firebase/firestore";
+import { useAuth } from "../../Auth0/UserAuthContext";
+
+
 import "./Res.css";
 
 const Res3 = () => {
+  const [selectedCard1, setSelectedCard1] = useState(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { currentuser } = useAuth();
+
+  const productName1 = location.state?.productName;
+  const locationName1 = location.state?.locationName;
+  const budget1 = location.state?.budget;
+  const ageGroup1 = location.state?.ageGroup;
+  const res1_card_data = location.state?.cardData;
+
+  const handleButtonClick1 = async () => {
+    if (selectedCard1 !== null) {
+      let cardData1;
+      if (selectedCard1 === 0) {
+        cardData1 = ""; //enter value of data
+      } else if (selectedCard1 === 1) {
+        cardData1 = "";
+      } else if (selectedCard1 === 2) {
+        cardData1 = "";
+      }
+
+      try {
+        const userEmail = currentuser?.email;
+
+        const userCollectionRef = collection(db, userEmail);
+        const productDocRef = doc(userCollectionRef, productName1);
+        // setProductDocRef(doc(userCollectionRef, productName));
+
+        await setDoc(productDocRef, {
+          ageGroup: ageGroup1,
+          location: locationName1,
+          budget: budget1,
+          Advertisment_Type: res1_card_data,
+          Advertisment_Channel: cardData1,
+          //add carddata4
+
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  };
   return (
     <>
       <div className="body">

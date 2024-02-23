@@ -16,6 +16,13 @@ export const useAuth = () => {
 const UserAuthContext = ({ children }) => {
   const [error, setError] = useState("");
   const [currentuser, setuser] = useState();
+<<<<<<< HEAD
+  const [isSignUpSuccess, setIsSignUpSuccess] = useState(false);
+  const [FullName] = useState("");
+  const navigate = useNavigate();
+
+=======
+>>>>>>> 7b00dd41019333dd2931840a2e64a1e2132516bf
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       console.log(user);
@@ -65,6 +72,7 @@ const UserAuthContext = ({ children }) => {
     SignUp,
     error,
     currentuser,
+    FullName,
   };
   return <userContext.Provider value={value}>{children}</userContext.Provider>;
 };

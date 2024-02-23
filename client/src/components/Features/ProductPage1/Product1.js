@@ -8,7 +8,7 @@ const Product1 = () => {
 
   const handleAddItem = () => {
     // Navigate to the new page and replace the current one
-    navigate("/product2", { replace: true });
+    navigate("/product22", { replace: true });
   };
 
   return (
