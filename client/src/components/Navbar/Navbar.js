@@ -76,6 +76,11 @@ const Navbar = () => {
                 ContactUs
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/login" className="login-button">
+                Login/Signin
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -103,8 +108,8 @@ const Navbar = () => {
                 <FaLinkedinIn className="likedin" />
               </a>
             </li>
-          </ul>
-
+            </ul>
+            
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>

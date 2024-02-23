@@ -1,5 +1,10 @@
 node_modules
+<<<<<<< HEAD
+package.json
+package-lock.json
+=======
 client/package-lock.json
 client/tailwind.config.js
 
 
+>>>>>>> 7b00dd41019333dd2931840a2e64a1e2132516bf
