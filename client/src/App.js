@@ -12,7 +12,8 @@ import Product2 from "./components/Features/ProductPage2/Product2.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
 import SignUp from "./components/Signup/Signup";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
-import Animate1 from "./components/Animated_page/Animate1.js";
+
+// import Animate1 from "./components/Animated_page/Animate1.js";
 import Animate2 from "./components/Animated_page/Animate2.js";
 import Res1 from "./components/Features/ProductPage3/Res1.js";
 import Res2 from "./components/Features/ProductPage3/Res2.js";
@@ -20,6 +21,7 @@ import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 import "./App.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -28,22 +30,33 @@ const App = () => {
 
   useEffect(() => {
     // Set up ScrollTrigger animations
-    gsap.from(".animate1", {
+    gsap.from(".Content", {
       opacity: 0,
       y: 50,
       scrollTrigger: {
-        trigger: ".animate1",
+        trigger: ".Content",
         start: "top center", // Adjust as needed
         end: "bottom center", // Adjust as needed
         scrub: true, // Smooth animation while scrolling
       },
     });
 
-    gsap.from(".animate2", {
+    gsap.from(".Info", {
       opacity: 0,
       y: 50,
       scrollTrigger: {
-        trigger: ".animate2",
+        trigger: ".Info",
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: true, // Smooth animation while scrolling
+      },
+    });
+
+    // Add zoom in/out animation on scroll
+    gsap.from(".Images", {
+      scale: 1.2,
+      scrollTrigger: {
+        trigger: ".Images",
         start: "top center", // Adjust as needed
         end: "bottom center", // Adjust as needed
         scrub: true, // Smooth animation while scrolling
@@ -61,7 +74,7 @@ const App = () => {
         {/* <div className="hero-container"> */}
         <MouseTrial />
         {/* <Content timeline={tl} /> */}
-        {/* <Images timeline={tl} ease={ease} /> */}
+        {/* <Images timeline={tl} ease={ease} className="Images" /> */}
 
         {/* <Animate1 className="animate1" /> */}
         {/* <Animate2 className="animate2" /> */}
