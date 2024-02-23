@@ -20,6 +20,7 @@ import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 import "./App.css";
+import Dashboard from "./components/Admin/index.js";
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -59,13 +60,13 @@ const App = () => {
     <Router>
       <div>
         {/* <div className="hero-container"> */}
-        <MouseTrial />
+        <MouseTrial /> 
         {/* <Content timeline={tl} /> */}
         {/* <Images timeline={tl} ease={ease} /> */}
-
+        {/* <Dashboard></Dashboard> */}
         {/* <Animate1 className="animate1" /> */}
         {/* <Animate2 className="animate2" /> */}
-        {/* <Service></Service> */}
+        <Service></Service>
         {/* <Info></Info> */}
         {/* <Footer /> */}
         <UserAuthContext>

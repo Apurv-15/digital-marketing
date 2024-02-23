@@ -4,6 +4,6 @@
   height: 6px;
   width: 6px;
   border-radius: 3px;
-  background: rgb(160, 190, 5); /* Set a transparent background */
+  background: rgb(239, 11, 19); /* Set a transparent background */
   pointer-events: none; /* Allow clicks to pass through */
 }
