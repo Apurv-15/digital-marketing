@@ -44,7 +44,7 @@ const Res4 = () => {
           location: locationName1,
           budget: budget1,
           Advertisment_Type: res1_card_data,
-          Advertisment_Channel: cardData4col,
+          // Advertisment_Channel: cardData4col,
           //add carddata4
         });
       } catch (error) {
