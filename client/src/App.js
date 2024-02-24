@@ -3,55 +3,26 @@ import { gsap, Power3 } from "gsap";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
 
-// import Content from "./components/Hero_page/HeroPage.js";
-// import Images from "./components/Hero_page/Image/Image.js";
-// import Service from "./components/services/Service.js";
-// import { Info } from "./components/Info_page/Info.js";
-// import Product1 from "./components/Features/ProductPage1/Product1.js";
-// import Product2 from "./components/Features/ProductPage2/Product2.js";
-// import Product22 from "./components/Features/ProductPage2/Product22.js";
-// import SignUp from "./components/Signup/Signup";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
-
-// import Animate1 from "./components/Animated_page/Animate1.js";
-// import Animate2 from "./components/Animated_page/Animate2.js";
-// import Res1 from "./components/Features/ProductPage3/Res1.js";
-import MouseTrial from "./components/MouseTrail/MouseTrail.js";
-// import Contact from "./components/Contact/Contact.js";
-// import Collab from "./components/Collab/Collab.js";
-import UserAuthContext from "./components/context/UserAuthContext.js";
-import Login from "./components/Login/Login.jsx";
-// import Signup from "./components/Signup/Signup.js";
-// import Testimonials from "./components/Testimonials/Testimonials.jsx";
-// import Strategies from "./components/Strategies/Strategies.js";
-=======
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
-// import Index from "./components/Cases/pages/index.js";
-
-import Content from "./components/Hero_page/HeroPage.js";
-import Images from "./components/Hero_page/Image/Image.js";
 import Service from "./components/services/Service.js";
-import { Info } from "./components/Info_page/Info.js";
-import Product1 from "./components/Features/ProductPage1/Product1.js";
-import { createGlobalStyle } from "styled-components";
-
-// import Product2 from "./components/Features/ProductPage2/Product2.js";
-import Product22 from "./components/Features/ProductPage2/Product22.js";
-import SignUp from "./components/Signup/Signup";
-import UserAuthContext from "./components/Auth0/UserAuthContext.js";
-
-import Animate1 from "./components/Animated_page/Animate1.js";
-import Animate2 from "./components/Animated_page/Animate2.js";
 import Res1 from "./components/Features/ProductPage3/Res1.js";
 import Res2 from "./components/Features/ProductPage3/Res2.js";
 import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
-import "./App.css";
-// import Res3 from "./components/Features/ProductPage3/Res3.js";
-// import Res2 from "./components/Features/ProductPage3/Res2.js";
-// import Res1 from "./components/Features/ProductPage3/Res3.js";
+import SignUp from "./components/Signup/Signup";
+// import Login from "./components/Login/Login.jsx";
+
+import Content from "./components/Hero_page/HeroPage.js";
+import Images from "./components/Hero_page/Image/Image.js";
+
+import Product1 from "./components/Features/ProductPage1/Product1.js";
+import Product22 from "./components/Features/ProductPage2/Product22.js";
+import NavBar from "./components/Navbar/Navbar.js";
+import Animate1 from "./components/Animated_page/Animate1.js";
+
+// import "./App.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -96,73 +67,30 @@ const App = () => {
     // Add more ScrollTrigger animations as needed
   }, []);
 
-  const darkTheme = true;
-
   return (
     <Router>
-      <div>
-        <Navbar />
-        <div className="hero-container">
-          <MouseTrial />
-          {/* <Content timeline={tl} /> */}
-          {/* <Images timeline={tl} ease={ease} /> */}
+      {/* <div> */}
+      <NavBar />
+      <MouseTrial />
+      {/* <Content timeline={tl} /> */}
+      {/* <Images timeline={tl} ease={ease} /> */}
 
-          {/* <Mind/> */}
-          {/* <Animate1 /> */}
-          {/* <Animate2 /> */}
-          {/*<Service></Service>*/}
-          {/*<Info></Info>*/}
-          {/* <Footer/> 
-        <Strategies/>
-        <Testimonials/>
-        <UserAuthContext>
-        <Signup/>
-        </UserAuthContext>*/}
-        <UserAuthContext>
-        <Login/>
-        </UserAuthContext>
-          <Routes>
-            {/*<Route path="/" element={<Product1 />} />*/}
-            {/*<Route path="/product2" element={<Product2 />} />
-            <Route path="/" element={<Collab/>} />
-        <Route path="Contact" element={<Contact/>} />*/}
-          </Routes>
-        </div>
-      </div>
-    </BrowserRouter>
-=======
-        {/* <div className="hero-container"> */}
-        <MouseTrial />
-        {/* <GlobalStyles /> */}
+      {/* <Service /> */}
 
-        {/* <Content timeline={tl} /> */}
-        {/* <Images timeline={tl} ease={ease} /> */}
-
-          {/* <Animate1 className="animate1" /> */}
-          {/* <Animate2 className="animate2" /> */}
-          <Service></Service>
-          {/* <Info></Info> */}
-          {/* <Footer /> */}
-          <UserAuthContext>
-            <Routes>
-            {/*<Route path="/" element={<Collab/>}/>*/}
-              {/*<Route path="/signup" element={<SignUp />} />
-  <Route path="/productadd" element={<Product1 />} />*/}
-              {/* <Route path="/product2" element={<Product2 />} /> 
-            <Route path="/product22" element={<Product22 />} />
-            <Route path="/res1" element={<Res1 />} />
-
-            <Route path="/res2" element={<Res2 />} />
-            <Route path="/res3" element={<Res3 />} />
-            <Route path="/res4" element={<Res4 />} />
-            {/* <Route path="/product3" element={<Product3 />} /> */}
-          </Routes>
-        </UserAuthContext>
-      </div>
-      <div></div>
+      <UserAuthContext>
+        <Routes>
+          <Route path="/signup" element={<SignUp />} />{" "}
+          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/productadd" element={<Product1 />} />
+          <Route path="/product22" element={<Product22 />} />
+          <Route path="/res1" element={<Res1 />} />
+          <Route path="/res2" element={<Res2 />} />
+          <Route path="/res3" element={<Res3 />} />
+          <Route path="/res4" element={<Res4 />} />
+        </Routes>
+      </UserAuthContext>
       {/* </div> */}
     </Router>
-
   );
 };
 

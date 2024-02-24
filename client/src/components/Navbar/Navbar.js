@@ -1,5 +1,5 @@
 import React, { useState, NavBtn, NavBtnLink } from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -18,7 +18,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <>
+    <div className="navbar">
       <nav className="main-nav">
         <NavLink
           to="/"
@@ -108,8 +108,8 @@ const Navbar = () => {
                 <FaLinkedinIn className="likedin" />
               </a>
             </li>
-            </ul>
-            
+          </ul>
+
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
