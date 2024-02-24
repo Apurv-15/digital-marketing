@@ -5,21 +5,52 @@ import './Res1234.css';
 const Res1 = () => {
   const [selectedCard, setSelectedCard] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
+  
 
-  const handleButtonClick = () => {
-    if (selectedCard === 0) {
-      navigate("/res2", { replace: true });
-    } else if (selectedCard === 1) {
-      navigate("/res3", { replace: true });
-    } else if (selectedCard === 2) {
-      navigate("/res4", { replace: true });
+  const productName = location.state?.productName;
+  const locationName = location.state?.locationName;
+  const ageGroup = location.state?.ageGroup;
+  const budget = location.state?.budget;
+
+  const handleButtonClick = async () => {
+    if (selectedCard !== null) {
+      var cardData;
+      if (selectedCard === 0) {
+        cardData = "Image";
+      } else if (selectedCard === 1) {
+        cardData = "Text";
+      } else if (selectedCard === 2) {
+        cardData = "Video";
+      }
+
+      try {
+        // Now, navigate to the next page
+        if (selectedCard === 0) {
+          navigate("/res2", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        } else if (selectedCard === 1) {
+          navigate("/res3", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        } else if (selectedCard === 2) {
+          navigate("/res4", {
+            replace: true,
+            state: { cardData, productName, locationName, ageGroup, budget },
+          });
+        }
+      } catch (error) {
+        console.error("Error updating document: ", error);
+      }
     }
   };
 
   const handleCardSelect = (index) => {
     setSelectedCard(index);
   };
-
   return (
     <>
       <div className="section1_1111">

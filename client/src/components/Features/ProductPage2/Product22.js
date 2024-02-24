@@ -11,13 +11,14 @@ const Product22 = () => {
   const navigate = useNavigate();
   const { currentuser } = useAuth();
 
-  const [selectedValue, setSelectedValue] = useState("");
+  const [ageGroup, setageGroup] = useState("");
   const [productName, setProductName] = useState("");
   const [locationName, setLocationName] = useState("");
   const [budget, setBudget] = useState("");
+  // const [productDocRef, setProductDocRef] = useState("");
 
   const handleDropDown = (event) => {
-    setSelectedValue(event.target.value);
+    setageGroup(event.target.value);
   };
 
   const handleProductNameChange = (event) => {
@@ -34,25 +35,27 @@ const Product22 = () => {
 
   const handleClickButton = async (e) => {
     e.preventDefault();
-    navigate("/res1", { replace: true });
-
     try {
-      // Get user email from Auth0
-      const userEmail = currentuser?.email;
+      // const userEmail = currentuser?.email;
 
-      // Construct Firestore collection references
-      const userCollectionRef = collection(db, userEmail);
-      const productDocRef = doc(userCollectionRef, productName);
+      // const userCollectionRef = collection(db, userEmail);
+      // const productDocRef = doc(userCollectionRef, productName);
+    
 
-      // Set document data
-      await setDoc(productDocRef, {
-        ageGroup: selectedValue,
-        location: locationName,
-        budget: budget,
+      // await setDoc(productDocRef, {
+      //   ageGroup: ageGroup,
+      //   location: locationName,
+      //   budget: budget,
+      // });
+
+      navigate("/res1", {
+        state: {
+          productName,
+          locationName,
+          budget,
+          ageGroup,   //means age group
+        },
       });
-
-      // Navigate to the next page
-      navigate("/product3", { replace: true });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
@@ -91,7 +94,7 @@ const Product22 = () => {
               <label htmlFor="Product_Name">Target Audience</label>
               <select
                 className="select_1"
-                value={selectedValue}
+                value={ageGroup}
                 onChange={handleDropDown}
                 required
               >
