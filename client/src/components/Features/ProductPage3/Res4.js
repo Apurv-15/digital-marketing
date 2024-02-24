@@ -25,7 +25,7 @@ const Res4 = () => {
       } else if (selectedCard4 === 1) {
         cardData4 = "Instagram Reels";
       } else if (selectedCard4 === 2) {
-        cardData4 = "Meta ";
+        cardData4 = "Meta Ad's ";
       }
 
       try {
@@ -67,7 +67,7 @@ const Res4 = () => {
                 />
                 {selectedCard4 === 0 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Image</h5>
+                  <h5>Youtube shorts</h5>
                   <p>lorem</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Res4 = () => {
                 />
                 {selectedCard4 === 1 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Text</h5>
+                  <h5>Instagram Reels</h5>
                   <p>lorem</p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Res4 = () => {
                 />
                 {selectedCard4 === 2 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Video</h5>
+                  <h5>Meta Ad's</h5>
                   <p>lorem</p>
                 </div>
               </div>
