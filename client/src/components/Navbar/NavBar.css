@@ -7,9 +7,9 @@
   font-family: "Jost", sans-serif;
 }
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 
 a {
   text-decoration: none;
@@ -28,7 +28,6 @@ li {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: black;
 }
-
 
 .menu-link {
   grid-column: 3/4;
@@ -62,8 +61,6 @@ li {
 }
 
 /* ----------- Grid part ends ----------------- */
-
-
 
 .menu-link ul li {
   font-size: 2.2rem;

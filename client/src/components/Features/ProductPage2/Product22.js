@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { db } from "../../Firebase/firebase.config";
-import { collection, doc, setDoc } from "firebase/firestore";
-import { useAuth } from "../../Auth0/UserAuthContext";
+
 import "./Product22.css";
 import animationData from "../../Images and video/Animation_for_forms.json";
 import Lottie from "react-lottie";
 
 const Product22 = () => {
   const navigate = useNavigate();
-  const { currentuser } = useAuth();
+
 
   const [ageGroup, setageGroup] = useState("");
   const [productName, setProductName] = useState("");

@@ -66,45 +66,12 @@ const Signup = () => {
           });
       }
     }
-<<<<<<< HEAD
-    return (
-        <div className='box'>
-            {
-                err ? (
-                    err && <p className='error'>{err}</p>
-                ) : (
-                    backError && <p className='error'>{backError}</p>
-                )
-            }
-
-            <form onSubmit={SubmitHandler} className="form">
-                <h2>Signup with valid credentials!</h2>
-                <div className="inputfield">
-                    <input type="text" placeholder="UserName" value={user.FullName} name='FullName' onChange={UserHandler} />
-                </div>
-                <div className="inputfield">
-                    <input type="text" placeholder="Email" value={user.email} name='email' onChange={UserHandler} />
-                </div>
-
-                <div className="inputfield">
-                    <input type="password" placeholder="Password" value={user.password} name='password' onChange={UserHandler} />
-                </div>
-                <div className="inputfield">
-                    <input type="password" placeholder="Confirm Password" value={user.confirmPassword} name='confirmPassword' onChange={UserHandler} />
-                </div>
-                <div className="inputfield">
-                    <input type="submit" />
-                </div>
-                <p className="forget">Already have an account? <a href="">Login</a></p>
-            </form>
-=======
   };
   return (
     <div className="box">
       {err
         ? err && <p className="error">{err}</p>
         : backError && <p className="error">{backError}</p>}
->>>>>>> 7b00dd41019333dd2931840a2e64a1e2132516bf
 
       <form onSubmit={SubmitHandler} className="form">
         <h2>Registration Form</h2>
@@ -127,10 +94,6 @@ const Signup = () => {
           />
         </div>
 
-<<<<<<< HEAD
-export default Signup
-
-=======
         <div className="inputfield">
           <input
             type="password"
@@ -161,4 +124,3 @@ export default Signup
 };
 
 export default Signup;
->>>>>>> 7b00dd41019333dd2931840a2e64a1e2132516bf
