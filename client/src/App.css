@@ -19,14 +19,14 @@
 
 .App-link {
   color: orange !important;
-} 
-
-.hero-container {
-  height: 100vh; 
-  scroll-behavior: smooth; 
 }
 
-body{
+.hero-container {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* body{
   background: hsla(0, 0%, 0%, 1);
 
   background: radial-gradient(
@@ -47,4 +47,4 @@ body{
     hsla(236, 100%, 20%, 1) 100%
   );
 
-}
+} */

@@ -80,32 +80,35 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      {/* <div> */}
-      <NavBar />
-      <MouseTrial />
-      {/* <Content timeline={tl} /> */}
-      {/* <Images timeline={tl} ease={ease} /> */}
-       <Details></Details>
-       {/* <Dashboard></Dashboard> */}
+    <>
+      {/* <NavBar /> */}
+
+      <Router>
+        {/* <div> */}
+        <MouseTrial />
+        {/* <Content timeline={tl} /> */}
+        {/* <Images timeline={tl} ease={ease} /> */}
+       {/* <Details></Details> */}
+       <Dashboard></Dashboard>
       {/* <Images timeline={tl} ease={ease} />
       <Service timeline={tl} /> */}
-      {/* <Service /> */}
+        {/* <Service /> */}
 
-      <UserAuthContext>
-        <Routes>
-          <Route path="/signup" element={<SignUp />} />{" "}
-          {/* <Route path="/login" element={<Login />} /> */}
-          <Route path="/productadd" element={<Product1 />} />
-          <Route path="/product22" element={<Product22 />} />
-          <Route path="/res1" element={<Res1 />} />
-          <Route path="/res2" element={<Res2 />} />
-          <Route path="/res3" element={<Res3 />} />
-          <Route path="/res4" element={<Res4 />} />
-        </Routes>
-      </UserAuthContext>
-      {/* </div> */}
-    </Router>
+        <UserAuthContext>
+          <Routes>
+            <Route path="/signup" element={<SignUp />} />{" "}
+            {/* <Route path="/login" element={<Login />} /> */}
+            <Route path="/productadd" element={<Product1 />} />
+            <Route path="/product22" element={<Product22 />} />
+            <Route path="/res1" element={<Res1 />} />
+            <Route path="/res2" element={<Res2 />} />
+            <Route path="/res3" element={<Res3 />} />
+            <Route path="/res4" element={<Res4 />} />
+          </Routes>
+        </UserAuthContext>
+        {/* </div> */}
+      </Router>
+    </>
   );
 };
 
