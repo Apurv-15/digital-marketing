@@ -22,7 +22,8 @@
   /* box-sizing: border-box; */
   font-size: 62.5%;
   overflow-y: scroll;
-  background: var(--greyLight-1);
+  /* background: var(--greyLight-1); */
+  /* background: #d0c4fd; */
 
   @media screen and (min-width: 900px) {
     font-size: 75%;
@@ -35,15 +36,15 @@
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  background: var(--greyLight-1);
+  /* background: var(--greyLight-1); */
+  /* background: #d0c4fd; */
 }
 
 .components {
   width: 75rem;
   height: 45rem;
   border-radius: 3rem;
-  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
-    -0.2rem -0.2rem 1.8rem var(--white);
+  box-shadow: 17px 17px 54px #706a89, -17px -17px 54px #57adfe;
   /* padding: 4rem; */
   display: grid;
   grid-template-columns: 17.6rem 19rem 20.4rem;
@@ -51,12 +52,13 @@
   grid-column-gap: 5rem;
   /* grid-row-gap: 2.5rem; */
   align-items: center;
+  z-index: 1;
 }
 
 /* Your specific styles here */
 
 .form__input {
-  width: 400%;
+  width: 350%;
   height: 4rem;
   border: none;
   border-radius: 1rem;
@@ -66,11 +68,11 @@
     inset -0.1rem -0.1rem 0.2rem var(--greyDark);
   background: none;
   font-family: inherit;
-  color: var(--greyDark);
+  color: black;
 }
 
 .form__input::placeholder {
-  color: var(--greyLight-3);
+  color: black;
 }
 
 .form__input:focus {
@@ -90,12 +92,11 @@
 
 .button_1 {
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   justify-content: center;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 18px 35px;
+  font-size: 20px;
   font-weight: bold;
-  text-align: center;
   text-decoration: none;
   cursor: pointer;
   margin-top: 1rem;
@@ -150,16 +151,12 @@
   }
 }
 
-.Product_Name {
-  margin-top: 100px;
-}
-
 label[for="Product_Name"] {
-  width: 100%;
+  width: 200%;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 800;
   display: inline-block;
   padding-right: 10px;
 }
@@ -185,7 +182,7 @@ label[for="Product_Name"] {
 }
 
 .select_1 {
-  width: 400%;
+  width: 350%;
   height: 4rem;
   border: none;
   border-radius: 1rem;
@@ -195,5 +192,5 @@ label[for="Product_Name"] {
     inset -0.1rem -0.1rem 0.2rem var(--greyDark);
   background: none;
   font-family: inherit;
-  color: var(--greyDark);
+  color: black;
 }

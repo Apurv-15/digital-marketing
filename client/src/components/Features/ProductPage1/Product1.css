@@ -3,27 +3,36 @@
   align-items: center;
   justify-content: center; /* Center content horizontally */
   height: 100vh; /* Adjust the height as needed */
-  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+  /* background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"); */
   background-size: cover;
+  background: #d0c4fd;
 }
 
 .centered-content {
   text-align: center;
+  width: 60%;
 }
 
 .add-item-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   border: none; /* Remove border */
-  margin: 2rem; /* Adjust margin */
+  margin-left: 5rem;
+  margin-top: -12rem;
   padding: 2rem; /* Adjust button size */
   cursor: pointer;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
-  color: #fff; /* Set text color */
-  background-color: #f66a6a; /* Set button color */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 230px;
+  height: 204px;
+  border-radius: 30px;
+  /* background: #e0e0e0; */
+  background: #d0c4fd;
+
+  /* box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff; */
+  box-shadow: 17px 17px 54px #706a89, -17px -17px 54px #afbcf2;
+
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -37,8 +46,9 @@
 }
 
 .empty-text {
-  color: #fff;
-  font-size: 18px;
+  color: black;
+  font-size: 28px;
+  margin-top: 2rem;
   /* Add any additional styling for the text */
 }
 
@@ -54,4 +64,15 @@
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.lottie_animation1 {
+  width: 40%;
+}
+.h2_text {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  margin-top: -20rem;
+  margin-bottom: 20rem;
+  font-size: 50px;
 }

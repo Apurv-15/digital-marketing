@@ -3,26 +3,30 @@
   justify-content: center;
   align-items: center; /* Add this line for vertical alignment */
   min-height: 100vh; /* Set minimum height to at least the viewport height */
-  background: #f5dbff;
+  background: #d0c4fd;
 }
 
 .container-111 {
   width: 100%; /* Set to 100% to take up the full width */
-  max-width: 60rem; /* Adjust the maximum width as needed */
+  max-width: 65rem; /* Adjust the maximum width as needed */
   margin: 5rem auto;
   padding: 20px;
   border-radius: 44px;
-  background: #f5dbff;
-  box-shadow: 26px 26px 52px #c6b1cf, -26px -26px 52px #ffffff;
+  /* background: #f5dbff; */
+  background: #d0c4fd;
+
+  box-shadow: 17px 17px 54px #706a89, -17px -17px 54px #ffffff;
 }
 
-.components-111 {
+.components-111,
+h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-
 .comp_111 {
-  margin: 10rem;
+  margin: 7rem;
   display: flex;
 
   flex-direction: row;
@@ -88,20 +92,23 @@
   justify-content: center;
   align-items: center;
   color: red;
-  margin-top: 40px;
+
+  margin-top: -80px;
 }
 
 .button-container button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 1rem 3rem;
+  font-size: 25px;
   background-color: #ff4081; /* Add your desired background color */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  margin-right: 10px;
 }
 
 .button-container button:hover {
   background-color: #d81b60; /* Change the background color on hover */
+  cursor: grabbing;
 }

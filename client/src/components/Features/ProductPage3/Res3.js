@@ -17,7 +17,7 @@ const Res3 = () => {
   const ageGroup1 = location.state?.ageGroup;
   const res1_card_data = location.state?.cardData;
 
-  const handleButtonClick1 = async () => {
+  const handleButtonClick3 = async () => {
     if (selectedCard3 !== null) {
       let carddata3;
       if (selectedCard3 === 0) {
@@ -43,10 +43,12 @@ const Res3 = () => {
           Advertisment_Channel: carddata3,
           //add carddata4
         });
-        console.log("db added successfully")
+        localStorage.removeItem("productFormData");
+        console.log("db added successfully");
       } catch (error) {
         console.log(error);
       }
+      navigate("/form_response", { state: { productName1 } });
     }
   };
 
@@ -58,6 +60,10 @@ const Res3 = () => {
     <>
       <div className="section1_1111">
         <div className="container-111">
+          <h1>
+            SELECT PLATFORM...
+            <br />
+          </h1>
           <div className="components-111">
             <div className="comp_111">
               <div
@@ -71,7 +77,6 @@ const Res3 = () => {
                 {selectedCard3 === 0 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Image</h5>
-                  <p>lorem</p>
                 </div>
               </div>
               <div
@@ -85,7 +90,6 @@ const Res3 = () => {
                 {selectedCard3 === 1 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Text</h5>
-                  <p>lorem</p>
                 </div>
               </div>
               <div
@@ -99,13 +103,12 @@ const Res3 = () => {
                 {selectedCard3 === 2 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Video</h5>
-                  <p>lorem</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="button-container" style={{ marginTop: "20px" }}>
-            <button onClick={handleCardSelect3}>Next</button>
+          <div className="button-container222">
+            <button onClick={handleButtonClick3}>Next</button>
           </div>
         </div>
       </div>

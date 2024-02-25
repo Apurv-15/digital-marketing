@@ -2,6 +2,8 @@ import React from "react";
 import { FaPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./Product1.css";
+import Lottie from "react-lottie";
+import animationData from "../../Images and video/Animation_for_product1.json";
 
 const Product1 = () => {
   const navigate = useNavigate();
@@ -11,14 +13,30 @@ const Product1 = () => {
     navigate("/product22", { replace: true });
   };
 
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="add-item-container">
       <div className="centered-content">
-        <div className="bg-image"></div>
+        <h2 className="h2_text">Add Products for Marketing now !</h2>
         <button className="add-item-button" onClick={handleAddItem}>
           <FaPlus className="icon" /> Add Item
         </button>
-        <p className="empty-text">Empty Item - Add Now</p>
+        {/* <p className="empty-text">Empty Item - Add Now</p>  */}
+      </div>
+      <div className="lottie_animation1">
+        <Lottie
+          options={lottieOptions}
+          height={450}
+          width={400}
+          marginTop={30}
+        />
       </div>
     </div>
   );
