@@ -1,22 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
-import "./Product22.css";
-import animationData from "../../Images and video/Animation_for_forms.json";
 import Lottie from "react-lottie";
-
+import animationData from "../../Images and video/Animation_for_forms.json";
+import "./Product22.css";
 const Product22 = () => {
   const navigate = useNavigate();
 
-
-  const [ageGroup, setageGroup] = useState("");
+  const [ageGroup, setAgeGroup] = useState("");
   const [productName, setProductName] = useState("");
   const [locationName, setLocationName] = useState("");
   const [budget, setBudget] = useState("");
-  // const [productDocRef, setProductDocRef] = useState("");
+
+  // Load form data from localStorage on component mount
+  useEffect(() => {
+    const storedFormData =
+      JSON.parse(localStorage.getItem("productFormData")) || {};
+    setAgeGroup(storedFormData.ageGroup || "");
+    setProductName(storedFormData.productName || "");
+    setLocationName(storedFormData.locationName || "");
+    setBudget(storedFormData.budget || "");
+  }, []);
 
   const handleDropDown = (event) => {
-    setageGroup(event.target.value);
+    setAgeGroup(event.target.value);
   };
 
   const handleProductNameChange = (event) => {
@@ -34,30 +40,24 @@ const Product22 = () => {
   const handleClickButton = async (e) => {
     e.preventDefault();
     try {
-      // const userEmail = currentuser?.email;
-
-      // const userCollectionRef = collection(db, userEmail);
-      // const productDocRef = doc(userCollectionRef, productName);
-    
-
-      // await setDoc(productDocRef, {
-      //   ageGroup: ageGroup,
-      //   location: locationName,
-      //   budget: budget,
-      // });
-
+      // Save form data to localStorage
+      localStorage.setItem(
+        "productFormData",
+        JSON.stringify({ ageGroup, productName, locationName, budget })
+      );
       navigate("/res1", {
         state: {
           productName,
           locationName,
           budget,
-          ageGroup,   //means age group
+          ageGroup,
         },
       });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
   };
+
   const lottieOptions = {
     loop: true,
     autoplay: true,
@@ -66,13 +66,19 @@ const Product22 = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
   return (
     <div className="section1_1">
       <div className="container">
         <div className="components">
           <div className="container_1">
             <div className="animation_section">
-              <Lottie options={lottieOptions} height={450} width={400} />
+              <Lottie
+                options={lottieOptions}
+                height={450}
+                width={400}
+                marginTop={30}
+              />
             </div>
 
             <div className="product_info">

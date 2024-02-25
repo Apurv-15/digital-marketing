@@ -1,0 +1,125 @@
+:root {
+  --success__primary: #3dc480;
+  --success__secondary: #b8babb;
+  --white: #fcfcfc;
+  --gray: #cbcdd3;
+  --dark: #777777;
+  --error: #ef8d9c;
+  --orange: #ffc39e;
+  --success: #b0db7d;
+  --secondary: #99dbb4;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d0c4fd;
+}
+
+.inner {
+  width: 100%;
+  max-width: 65rem;
+  margin: 5rem auto;
+  padding: 20px;
+  min-height: 45vh;
+  border-radius: 44px;
+  background: #d0c4fd;
+  box-shadow: 17px 17px 54px #706a89, -17px -17px 54px #ffffff;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-top: -6rem;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.lottie_animate {
+  height: 50%;
+}
+.success-message {
+  /* text-align: center;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: green;
+}
+
+.success-message__icon {
+  max-width: 75px;
+  /* margin-top: 20px; */
+}
+
+.success-message__content {
+  color: #b8babb;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: all 200ms ease;
+  transition-delay: 50ms;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.icon-checkmark {
+  circle {
+    fill: #3dc480;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+    transition: transform 200ms cubic-bezier(0.22, 0.96, 0.38, 0.98);
+  }
+  path {
+    transition: stroke-dashoffset 350ms ease;
+    transition-delay: 100ms;
+  }
+
+  &.active {
+    circle {
+      transform: scale(1);
+    }
+  }
+}
+
+.title1 {
+  font-size: 20px;
+}
+
+.lottie_animate {
+  margin-top: -6rem;
+}
+
+.button-container12 button {
+  padding: 0.8rem 3rem;
+  font-size: 25px;
+  background-color: #ff4081; /* Add your desired background color */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-container12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.button-container12 button:hover {
+  background-color: #d81b60; /* Change the background color on hover */
+  cursor: grabbing;
+}

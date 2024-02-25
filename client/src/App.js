@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
 
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
+import Thanks from "./components/Features/Thanks_response/Thank.js";
 import Service from "./components/services/Service.js";
 import Res1 from "./components/Features/ProductPage3/Res1.js";
 import Res2 from "./components/Features/ProductPage3/Res2.js";
@@ -69,11 +70,11 @@ const App = () => {
 
   return (
     <>
-      {/* <NavBar /> */}
-
       <Router>
+        <NavBar />
         {/* <div> */}
         <MouseTrial />
+    
         {/* <Content timeline={tl} /> */}
         {/* <Images timeline={tl} ease={ease} /> */}
 
@@ -89,6 +90,7 @@ const App = () => {
             <Route path="/res2" element={<Res2 />} />
             <Route path="/res3" element={<Res3 />} />
             <Route path="/res4" element={<Res4 />} />
+            <Route path="/form_response" element={<Thanks />} />
           </Routes>
         </UserAuthContext>
         {/* </div> */}

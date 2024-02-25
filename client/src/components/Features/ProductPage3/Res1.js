@@ -27,17 +27,14 @@ const Res1 = () => {
         // Now, navigate to the next page
         if (selectedCard === 0) {
           navigate("/res2", {
-            replace: true,
             state: { cardData, productName, locationName, ageGroup, budget },
           });
         } else if (selectedCard === 1) {
           navigate("/res3", {
-            replace: true,
             state: { cardData, productName, locationName, ageGroup, budget },
           });
         } else if (selectedCard === 2) {
           navigate("/res4", {
-            replace: true,
             state: { cardData, productName, locationName, ageGroup, budget },
           });
         }
@@ -67,7 +64,6 @@ const Res1 = () => {
                 {selectedCard === 0 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Image</h5>
-                  <p>lorem</p>
                 </div>
               </div>
               <div
@@ -81,7 +77,6 @@ const Res1 = () => {
                 {selectedCard === 1 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Text</h5>
-                  <p>lorem</p>
                 </div>
               </div>
               <div
@@ -95,7 +90,6 @@ const Res1 = () => {
                 {selectedCard === 2 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Video</h5>
-                  <p>lorem</p>
                 </div>
               </div>
             </div>

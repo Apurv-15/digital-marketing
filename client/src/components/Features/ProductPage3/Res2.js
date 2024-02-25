@@ -50,9 +50,12 @@ const Res2 = () => {
           Advertisment_Channel: cardData1,
           //add carddata2
         });
+        localStorage.removeItem("productFormData");
+        console.log("db added successfully");
       } catch (error) {
         console.error(error);
       }
+      navigate("/form_response", { state: { productName1 } });
     }
   };
   const handleCardSelect = (index) => {
@@ -62,6 +65,10 @@ const Res2 = () => {
     <>
       <div className="section1_1111">
         <div className="container-111">
+          <h1>
+            SELECT PLATFORM...
+            <br />
+          </h1>
           <div className="components-111">
             <div className="comp_111">
               <div
@@ -74,8 +81,7 @@ const Res2 = () => {
                 />
                 {selectedCard1 === 0 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Image</h5>
-                  <p>lorem</p>
+                  <h5>Facebook Ad's</h5>
                 </div>
               </div>
               <div
@@ -88,8 +94,7 @@ const Res2 = () => {
                 />
                 {selectedCard1 === 1 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Text</h5>
-                  <p>lorem</p>
+                  <h5>Google Ad's</h5>
                 </div>
               </div>
               <div
@@ -102,13 +107,12 @@ const Res2 = () => {
                 />
                 {selectedCard1 === 2 && <div className="check-icon"></div>}
                 <div className="card-content">
-                  <h5>Video</h5>
-                  <p>lorem</p>
+                  <h5>Instagram Ad's</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div className="button-container" style={{ marginTop: "20px" }}>
+          <div className="button-container">
             <button onClick={handleButtonClick2}>Next</button>
           </div>
         </div>
