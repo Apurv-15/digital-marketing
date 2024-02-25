@@ -10,18 +10,20 @@ import Res2 from "./components/Features/ProductPage3/Res2.js";
 import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
+import Details from "./components/services/details.js";
 import SignUp from "./components/Signup/Signup";
 // import Login from "./components/Login/Login.jsx";
 
 import Content from "./components/Hero_page/HeroPage.js";
 import Images from "./components/Hero_page/Image/Image.js";
+import Dashboard from "./components/Admin/Dashboard.js";
 
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
 import NavBar from "./components/Navbar/Navbar.js";
 import Animate1 from "./components/Animated_page/Animate1.js";
 
-// import "./App.css";
+import "./App.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,6 +67,16 @@ const App = () => {
     });
 
     // Add more ScrollTrigger animations as needed
+    gsap.from(".Service", {
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        trigger: ".Service",
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: true, // Smooth animation while scrolling
+      },
+    });
   }, []);
 
   return (
@@ -74,7 +86,10 @@ const App = () => {
       <MouseTrial />
       {/* <Content timeline={tl} /> */}
       {/* <Images timeline={tl} ease={ease} /> */}
-
+       <Details></Details>
+       {/* <Dashboard></Dashboard> */}
+      {/* <Images timeline={tl} ease={ease} />
+      <Service timeline={tl} /> */}
       {/* <Service /> */}
 
       <UserAuthContext>

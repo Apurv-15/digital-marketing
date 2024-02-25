@@ -5,7 +5,7 @@ import { db } from "../../Firebase/firebase.config";
 import { collection, doc, setDoc } from "firebase/firestore";
 import { useAuth } from "../../Auth0/UserAuthContext";
 
-const Res1 = () => {
+const Res3 = () => {
   const [selectedCard3, setSelectedCard3] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -113,4 +113,4 @@ const Res1 = () => {
   );
 };
 
-export default Res1;
+export default Res3;
