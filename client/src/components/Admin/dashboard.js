@@ -16,7 +16,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getEmployees = async () => {
-    const querySnapshot = await getDocs(collection(db, "Apurv"));
+    const querySnapshot = await getDocs(collection(db, "shavacchenna031005@gmail.com"));
     const employees = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
     setEmployees(employees)
   }
@@ -83,7 +83,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
           getEmployees={getEmployees}
         />
       )}
-      {isEditing && (
+      {/* {isEditing && (
         <Edit
           employees={employees}
           selectedEmployee={selectedEmployee}
@@ -91,7 +91,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
           setIsEditing={setIsEditing}
           getEmployees={getEmployees}
         />
-      )}
+      )} */}
     </div>
   );
 };

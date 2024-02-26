@@ -106,9 +106,10 @@ function Dashboard({ employees, handleEdit, handleDelete, classes }) {
         <TableHead>
           <TableRow>
             <CustomTableCell>ID</CustomTableCell>
-            <CustomTableCell align="right">Gmail</CustomTableCell>
-            <CustomTableCell align="right">Empty</CustomTableCell>
-            <CustomTableCell align="right" colSpan={2}>Actions</CustomTableCell>
+            <CustomTableCell align="right">Target AGeGroup</CustomTableCell>
+            <CustomTableCell align="right">Budget</CustomTableCell>
+            <CustomTableCell align="right">Location</CustomTableCell>
+            <CustomTableCell align="right" >Mode</CustomTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -118,23 +119,23 @@ function Dashboard({ employees, handleEdit, handleDelete, classes }) {
                 <CustomTableCell component="th" scope="row">
                   {employee.id}
                 </CustomTableCell>
-                <CustomTableCell align="right">{employee.email}</CustomTableCell>
-                <CustomTableCell align="right"></CustomTableCell>
-                <CustomTableCell align="right">
-                  <button
+                <CustomTableCell align="right">{employee.ageGroup}</CustomTableCell>
+                <CustomTableCell align="right">{employee.budget}</CustomTableCell>
+                <CustomTableCell align="right">{employee.location}
+                  {/* <button
                     onClick={() => handleEdit(employee.id)}
                     className="button muted-button"
                   >
                     Edit
-                  </button>
+                  </button> */}
                 </CustomTableCell>
-                <CustomTableCell align="right">
-                  <button
+                <CustomTableCell align="right">{employee.Advertisment_Type}
+                  {/* <button
                     onClick={() => handleDelete(employee.id)}
                     className="button muted-button"
                   >
                     Delete
-                  </button>
+                  </button> */}
                 </CustomTableCell>
               </TableRow>
             ))

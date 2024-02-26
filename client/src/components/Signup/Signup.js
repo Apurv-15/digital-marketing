@@ -66,7 +66,7 @@ const Signup = () => {
           });
       }
     }
-  };
+  }
   return (
     <div className="box">
       {err

@@ -11,6 +11,7 @@ import Res2 from "./components/Features/ProductPage3/Res2.js";
 import Res3 from "./components/Features/ProductPage3/Res3.js";
 import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
+import Details from "./components/services/details.js";
 import SignUp from "./components/Signup/Signup";
 // import Login from "./components/Login/Login.jsx";
 import Contact from "./components/Contact/Contact.js";
@@ -68,6 +69,16 @@ const App = () => {
     });
 
     // Add more ScrollTrigger animations as needed
+    gsap.from(".Service", {
+      opacity: 0,
+      y: 50,
+      scrollTrigger: {
+        trigger: ".Service",
+        start: "top center", // Adjust as needed
+        end: "bottom center", // Adjust as needed
+        scrub: true, // Smooth animation while scrolling
+      },
+    });
   }, []);
 
   return (
