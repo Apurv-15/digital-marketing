@@ -19,10 +19,12 @@ import Collab from "./components/Collab/Collab.js";
 
 import Content from "./components/Hero_page/HeroPage.js";
 // import Images from "./components/Hero_page/Image/Images.js";
+import Work from "./components/Work/Work.js";
 
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
 import NavBar from "./components/Navbar/Navbar.js";
+import Testimonials from "./components/Testimonials/Testimonials.js";
 
 import "./App.css";
 
@@ -99,9 +101,11 @@ const App = () => {
               path="/"
               element={
                 <>
-                  <Content timeline={tl} />
-                  <Service timeline={tl} />
-                  <Collab />
+                  {/* <Content timeline={tl} /> */}
+                  {/* <Service timeline={tl} /> */}
+                  {/* <Collab /> */}
+                  {/* <Work /> */}
+                  {/* <Testimonials /> */}
                 </>
               }
             />

@@ -98,7 +98,14 @@ const Work = () => {
             <div className="grid-1-3"></div>
             <div className="grid-1-4"></div>
           </div>
-          <div className="see"><a className="linkuu " href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8">see more...</a></div>
+          <div className="see">
+            <a
+              className="linkuu "
+              href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8"
+            >
+              see more...
+            </a>
+          </div>
         </div>
         <div className="block2">
           <div className="img-text2">
@@ -119,7 +126,14 @@ const Work = () => {
             <div className="grid-2-3"></div>
             <div className="grid-2-4"></div>
           </div>
-          <div className="see"><a className="linkuu " href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8">see more...</a></div>
+          <div className="see">
+            <a
+              className="linkuu "
+              href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8"
+            >
+              see more...
+            </a>
+          </div>
         </div>
       </div>
     </div>
