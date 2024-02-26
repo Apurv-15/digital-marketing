@@ -1,41 +1,104 @@
-.Contact{
-    padding: 120px 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.Contact {
+  padding: 120px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
 }
 
-.topic{
-    color: #868f97;
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 50px;
-    letter-spacing: 0.23cm;
-    text-transform: uppercase;
+.topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #868f97;
+  font-weight: 500;
+  font-size: 20px;
+  /* margin-bottom: 50px; */
+  letter-spacing: 0.23cm;
+  text-transform: uppercase;
 }
 
-.title{
-    font-size: 65px !important;
-    font-weight: 800 !important;
-    position: relative;
-    color: #fff !important;
+.title {
+  font-size: 65px !important;
+  font-weight: 800 !important;
+  position: relative;
+  color: #fff !important;
+  margin-top: 2rem;
 }
 
-.title::after{
-    content: "";
-    position: absolute;
-    background: #fff;
-    width: 0;
-    height: 6px;
-    bottom: -6px;
-    left: unset;
-    right: 0;
-    transition: width .2s linear;
+.title::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 6px;
+  bottom: -6px;
+  left: unset;
+  right: 0;
+  transition: width 0.2s linear;
 }
 
-.title:hover::after{
-    width: 100%;
-    left: 0;
-    right: unset;
+.title:hover::after {
+  width: 100%;
+  left: 0;
+  right: unset;
 }
+
+/* .Contact {
+  padding: 120px 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.topic123 {
+  display: flex;
+  justify-content: center;
+  color: #868f97;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 0.23cm;
+  text-transform: uppercase;
+}
+
+.title123 {
+  color: #fff !important;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.title123::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 6px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s linear;
+}
+
+.title123 h3:hover + ::after {
+  width: 100%;
+}
+
+.title123 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.inner_content123 {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+} */

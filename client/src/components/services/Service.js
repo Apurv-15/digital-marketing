@@ -92,6 +92,7 @@ import { styles } from "../services/styles";
 import { experiences } from "../services/constants";
 import { SectionWrapper } from "../services/hoc";
 import { textVariant } from "../services/utils/motion";
+import "./Service.css";
 
 const ExperienceCard = ({ experience }) => {
   return (

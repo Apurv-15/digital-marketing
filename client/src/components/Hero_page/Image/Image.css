@@ -21,15 +21,23 @@
   width: 350px;
   border: 0.5px solid gray;
   height: 450px;
+  margin-right: 2rem;
 }
 .images .box3 {
   position: absolute;
   top: 500px;
   right: 10px;
+  margin-right: 2rem;
   background: url("https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.landing-big_2x.jpg")
     no-repeat 50% 50%;
   background-size: cover;
   width: 350px;
   border: 0.5px solid gray;
   height: 400px;
+}
+
+.images {
+  display: flex;
+  justify-content: flex-end; /* Align images to the right side */
+  width: 70%;
 }

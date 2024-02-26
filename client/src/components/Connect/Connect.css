@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.page {
+    justify-content: left;
+    text-align: left;
+    margin-top: 50px;
+    font-family: 'Josefin Sans';
+    color: white;
+    padding-left: 80px;
+    background-color: black;
+}
+
+.page .head {
+    margin-bottom: 50px;
+}
+
+.page .body {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .body .sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.page .body .big-pic {
+    background-image: url(../../assests/Founder.png);
+    height: 500px;
+    width: 500px;
+    margin-left: 600px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.page .body .email {
+    background-image: url(../../assests/email-icon\ copy.png);
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-right: 55px;
+    background-size: cover;
+}
+
+.page .body .phone {
+    background-image: url(../../assests/phone-icon\ copy.png);
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-right: 55px;
+    background-size: cover;
+}
+
+.page .head .head-text {
+    font-size: 60px;
+    padding-left: 0px;
+}
+
+.linku {
+    color: white;
+}
+
+.linku:hover {
+    text-decoration: underline; 
+    transform: scale(1.1);
+}
+
+.page .body .big-pic:hover
+{
+    transform: scale(1.1);
+}

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap, Power3 } from "gsap";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
-
+// import { analytics, app } from "./components/firebase.config.js";
 import UserAuthContext from "./components/Auth0/UserAuthContext.js";
 import Thanks from "./components/Features/Thanks_response/Thank.js";
 import Service from "./components/services/Service.js";
@@ -14,15 +14,15 @@ import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 import Details from "./components/services/details.js";
 import SignUp from "./components/Signup/Signup";
 // import Login from "./components/Login/Login.jsx";
-import Footer from "./components/Footer/Footer.js";
+import Contact from "./components/Contact/Contact.js";
+import Collab from "./components/Collab/Collab.js";
+
 import Content from "./components/Hero_page/HeroPage.js";
-import Images from "./components/Hero_page/Image/Image.js";
-import Dashboard from "./components/Admin/Dashboard.js";
+// import Images from "./components/Hero_page/Image/Images.js";
 
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
 import NavBar from "./components/Navbar/Navbar.js";
-import Animate1 from "./components/Animated_page/Animate1.js";
 
 import "./App.css";
 
@@ -34,6 +34,7 @@ const App = () => {
 
   useEffect(() => {
     // Set up ScrollTrigger animations
+
     gsap.from(".Content", {
       opacity: 0,
       y: 50,
@@ -57,10 +58,10 @@ const App = () => {
     });
 
     // Add zoom in/out animation on scroll
-    gsap.from(".Images", {
+    gsap.from(".Services", {
       scale: 1.2,
       scrollTrigger: {
-        trigger: ".Images",
+        trigger: ".Services",
         start: "top center", // Adjust as needed
         end: "bottom center", // Adjust as needed
         scrub: true, // Smooth animation while scrolling
@@ -84,20 +85,27 @@ const App = () => {
     <>
       <Router>
         <NavBar />
-        {/* <div> */}
+
         <MouseTrial />
-       {/* <SignUp></SignUp> */}
-        <Content timeline={tl} /> 
-         <Images timeline={tl} ease={ease} />
-       {/* <Details></Details> */}
-       {/* <Dashboard></Dashboard> */}
-      {/* <Images timeline={tl} ease={ease} />
-      <Service timeline={tl} /> */}
-        {/* <Service /> */}
-        <Service></Service>
-        <Footer></Footer>
+        {/* <div className="hero_section">
+          <Content timeline={tl} />
+
+          <Service />
+        </div> */}
+
         <UserAuthContext>
           <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Content timeline={tl} />
+                  <Service timeline={tl} />
+                  <Collab />
+                </>
+              }
+            />
+            <Route path="/Contact" element={<Contact />} />
             <Route path="/signup" element={<SignUp />} />{" "}
             {/* <Route path="/login" element={<Login />} /> */}
             <Route path="/productadd" element={<Product1 />} />

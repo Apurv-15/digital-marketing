@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./Product1.css";
 import Lottie from "react-lottie";
-import animationData from "../../Images and video/Animation_for_product1.json";
+import animationData from "../../Images and video/Animation_productadd.json";
 
 const Product1 = () => {
   const navigate = useNavigate();
@@ -33,8 +33,8 @@ const Product1 = () => {
       <div className="lottie_animation1">
         <Lottie
           options={lottieOptions}
-          height={450}
-          width={400}
+          height={550}
+          width={800}
           marginTop={30}
         />
       </div>
