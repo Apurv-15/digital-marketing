@@ -95,7 +95,6 @@ const Work = () => {
               see more...
             </a>
           </div>
-<<<<<<< HEAD
         </div>
         <div className="linu">
           <hr
@@ -107,8 +106,6 @@ const Work = () => {
               width: "1000px",
             }}
           />
-=======
->>>>>>> dd56a7c9270c3e84953cd99b3d9fa693018fe08f
         </div>
         <div className="block2">
           <div className="img-text2">Graphics Designing</div>
