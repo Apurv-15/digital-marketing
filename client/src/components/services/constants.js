@@ -25,6 +25,16 @@
 //     threejs,
 //   } from "../assets";
   
+import image1 from "./assets/img1.png";
+import image2 from "./assets/img2.png";
+import image3 from "./assets/img3.png";
+import image4 from "./assets/img4.png";
+import image5 from "./assets/img5.png";
+import image6 from "./assets/img6.png";
+import image7 from "./assets/img7.png";
+import image8 from "./assets/img8.jpg";
+import image9 from "./assets/img9.jpg";
+// import image1 from "./assets/img1.png";
   export const navLinks = [
     {
       id: "about",
@@ -118,9 +128,9 @@
     {
       title: "Product Photography",
       company_name: "Starbucks",
-    //   icon: starbucks,
+      icon: image1,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      // date: "March 2020 - April 2021",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -131,22 +141,22 @@
     {
       title: "Photography",
       company_name: "Tesla",
-    //   icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      icon: image2,
+      // iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        
       ],
     },
     {
       title: "Product Advertisement",
       company_name: "Shopify",
-    //   icon: shopify,
+      icon: image3,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      // date: "Jan 2022 - Jan 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -157,14 +167,64 @@
     {
       title: "Websites developing",
       company_name: "Meta",
-    //   icon: meta,
+      icon: image4,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      // date: "Jan 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Digital Marketing",
+      company_name: "",
+      icon: image5,
+      iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
+      points: [
+        "Search Engine Optimization (SEO): Optimizing website content to improve search engine rankings and visibility.Search Engine Marketing SEM: Running paid advertising campaigns on search engines.","Content Marketing: Creating and distributing valuable, relevant content to attract and engage a target audience."," Email Marketing: Designing and executing email campaigns to nurture leads and maintain customer relationships.","Social Media Marketing: Managing and promoting brands on social media platforms to increase visibility and engagement.",
+      ],
+    },
+    {
+      title: "Public Relations (PR):",
+      company_name: "",
+      icon: image6,
+      iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
+      points: [
+        "Media Relations: Building relationships with journalists and securing media coverage for clients."," Press Release Writing: Creating and distributing press releases to announce company news or events."," Crisis Communication: Providing support during crisis situations to manage and protect a brand's reputation."
+      ],
+    },
+    {
+      title: "Branding and Design:",
+      company_name: "",
+      icon: image7,
+      iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
+      points: [
+        "Logo Design:* Creating distinctive and memorable logos to represent a brand."," Brand Strategy: Developing a comprehensive plan to define and communicate a brand's identity."," Graphic Design: Designing marketing collateral, packaging, and promotional materials."
+      ],
+    },
+    {
+      title: "Market Research:",
+      company_name: "",
+      icon: image8,
+      iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
+      points: [
+        " Consumer Research: Conducting surveys, interviews, and focus groups to understand consumer behavior and preferences.","Competitor Analysis: Evaluating competitors to identify strengths, weaknesses, and opportunities in the market."
+      ],
+    },
+    {
+      title: "Event Marketing",
+      company_name: "",
+      icon: image9,
+      iconBg: "#E6DEDD",
+      // date: "Jan 2021 - Feb 2022",
+      points: [
+        "Event Planning: Organizing and executing events to promote a brand or product.","Experiential Marketing: Creating memorable and interactive experiences to engage with the target audience."
       ],
     },
   ];
