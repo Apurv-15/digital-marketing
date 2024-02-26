@@ -24,8 +24,8 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
@@ -48,8 +48,8 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
@@ -72,54 +72,57 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
       />
       <div className="images-block">
         <div className="block1">
-          <div className="img-text1">
-            Photography
-            <hr
-              style={{
-                background: "black",
-                color: "black",
-                borderColor: "black",
-                height: "1px",
-                width: "700px",
-              }}
-            />
-          </div>
+          <div className="img-text1">Photography</div>
           <div className="img-grid-1">
             <div className="grid-1-1"></div>
             <div className="grid-1-2"></div>
             <div className="grid-1-3"></div>
             <div className="grid-1-4"></div>
           </div>
-          <div className="see"><a className="linkuu " href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8">see more...</a></div>
+          <div className="see">
+            <a
+              className="linkuu "
+              href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8"
+            >
+              see more...
+            </a>
+          </div>
+        </div>
+        <div className="linu">
+          <hr
+            style={{
+              background: "black",
+              color: "black",
+              borderColor: "black",
+              height: "1px",
+              width: "1000px",
+            }}
+          />
         </div>
         <div className="block2">
-          <div className="img-text2">
-            Graphics Designing
-            <hr
-              style={{
-                background: "black",
-                color: "black",
-                borderColor: "black",
-                height: "1px",
-                width: "600px",
-              }}
-            />
-          </div>
+          <div className="img-text2">Graphics Designing</div>
           <div className="img-grid-2">
             <div className="grid-2-1"></div>
             <div className="grid-2-2"></div>
             <div className="grid-2-3"></div>
             <div className="grid-2-4"></div>
           </div>
-          <div className="see"><a className="linkuu " href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8">see more...</a></div>
+          <div className="see">
+            <a
+              className="linkuu "
+              href="https://drive.google.com/drive/folders/1vV5J5l6ZMZ3XpzCEXeD8s-rlxFpjKMs8"
+            >
+              see more...
+            </a>
+          </div>
         </div>
       </div>
     </div>

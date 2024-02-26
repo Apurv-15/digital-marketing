@@ -25,6 +25,8 @@ import Product22 from "./components/Features/ProductPage2/Product22.js";
 import NavBar from "./components/Navbar/Navbar.js";
 
 import "./App.css";
+import Work from "./components/Work/Work.js";
+import Connect from "./components/Connect/Connect.js"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,6 +104,7 @@ const App = () => {
                   <Content timeline={tl} />
                   <Service timeline={tl} />
                   <Collab />
+                  {/* <Connect/> */}
                 </>
               }
             />
@@ -115,6 +118,7 @@ const App = () => {
             <Route path="/res3" element={<Res3 />} />
             <Route path="/res4" element={<Res4 />} />
             <Route path="/form_response" element={<Thanks />} />
+            <Route path="/work" element={<Work />} />
           </Routes>
         </UserAuthContext>
         {/* </div> */}
