@@ -1,125 +1,84 @@
-import React, { useState, NavBtn, NavBtnLink } from "react";
-import "./NavBar.css";
+import { useRef, Link } from "react";
 import {
+  FaBars,
+  FaTimes,
   FaFacebookSquare,
   FaInstagramSquare,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
   faBriefcase,
   faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Signup from "../Signup/Signup";
+import "./NavBar.css";
 
-const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+function Navbar() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
-    <div className="navbar">
-      <nav className="main-nav">
-        <NavLink
-          to="/"
-          className="nav-logo"
-          style={{
-            color: "orange",
-            fontSize: "2.5rem",
-            fontWeight: "400",
-            display: "grid",
-            gridColumn: "2/3",
-            justifyContent: "start",
-            alignItems: "center",
-          }}
+    <header>
+      <h3>KAHANIKARS</h3>
+      <nav ref={navRef}>
+        <a href="/#">
+          <FontAwesomeIcon icon={faUser} style={{ marginRight: "8px" }} />
+          Our Work
+        </a>
+        <a href="/#">
+          <FontAwesomeIcon icon={faBriefcase} style={{ marginRight: "8px" }} />
+          Strategies
+        </a>
+        <a href="./Service">
+          <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "8px" }} />
+          Services
+        </a>
+        <a href="/#">
+          <FontAwesomeIcon icon={faPhone} style={{ marginRight: "8px" }} />
+          Contact Us
+        </a>
+        <a
+          className="facebook"
+          href="https://www.facebook.com/profile.php?id=100083795178955&locale2=hi_IN&paipv=0&eav=AfblL-haEe-Uzy--wp4EcAJInP1HjWQzmm2Ai1Lx5Dggj--fbtYOB_0Diyk3ZZahB88&_rdr"
+          target="_thapa"
         >
-          <h1>Kahanikars</h1>
-        </NavLink>
-
-        {/* 2nd menu part  */}
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }
+          <FaFacebookSquare className="facebook" />
+        </a>
+        <a
+          className="instagram"
+          href="https://www.instagram.com/kahanikars/"
+          target="_thapa"
         >
-          <ul>
-            <li>
-              <NavLink to="/">
-                <FontAwesomeIcon icon={faUser} style={{ marginRight: "8px" }} />
-                AboutUs
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">
-                <FontAwesomeIcon
-                  icon={faBriefcase}
-                  style={{ marginRight: "8px" }}
-                />
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/service">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ marginRight: "8px" }}
-                />
-                Blogs
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  style={{ marginRight: "8px" }}
-                />
-                ContactUs
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/login" className="login-button">
-                Login/Signin
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-
-        {/* 3rd social media links */}
-        <div className="social-media">
-          <ul className="social-media-desktop">
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=100083795178955&locale2=hi_IN&paipv=0&eav=AfblL-haEe-Uzy--wp4EcAJInP1HjWQzmm2Ai1Lx5Dggj--fbtYOB_0Diyk3ZZahB88&_rdr"
-                target="_thapa"
-              >
-                <FaFacebookSquare className="facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/kahanikars/" target="_thapa">
-                <FaInstagramSquare className="instagram" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/sujith-panicker-504707203/?originalSubdomain=in"
-                target="_thapa"
-              >
-                <FaLinkedinIn className="likedin" />
-              </a>
-            </li>
-          </ul>
-
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
-        </div>
+          <FaInstagramSquare className="instagram" />
+        </a>
+        <a
+          className="linkedin"
+          href="https://www.linkedin.com/in/sujith-panicker-504707203/?originalSubdomain=in"
+          target="_thapa"
+        >
+          <FaLinkedinIn className="likedin" />
+        </a>
+        {/* <div>
+        
+          <Link to="/Signup" className="login">
+            Login/SignUp
+          </Link>
+        </div> */}
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
       </nav>
-    </div>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
-};
+}
 
 export default Navbar;

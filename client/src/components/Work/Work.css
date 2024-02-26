@@ -1,0 +1,375 @@
+.mainpage
+{
+    font-family: Montserrat;
+    margin: 0px;
+    background-color: white;
+}
+
+.mainpage .top-bg
+{
+    background-image: url(../assests/img1.jpg);
+    height: 50vh;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.mainpage .top-bg .h1
+{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    padding-top: 150px;
+
+}
+
+.mainpage .rec1
+{
+    margin-top: 100px;
+    display: flex;
+    height: 50vh;
+    border-radius: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 12px  black;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    color:black;
+    background-color: white;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+
+.mainpage .rec2
+{
+    margin-top: 50px;
+    display: flex;
+    height: 50vh;
+    border-radius: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 12px  black;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .rec3
+{
+    margin-top: 50px;
+    display: flex;
+    height: 50vh;
+    border-radius: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 12px  black;
+    margin-bottom: 50px;
+    text-align: left;
+    transition: transform 0.3s ease; 
+}
+
+.mainpage .rec1 .photobg
+{
+    background-image: url(../assests/img11.png);
+    border-radius: 50px;
+    height: 290px;
+    width: 1000px;
+    margin-top: 40px;
+    margin-right: 55px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px  black;
+}
+
+.mainpage .rec2 .videobg
+{
+    background-image: url(../assests/img13.jpg);
+    border-radius: 50px;
+    height: 290px;
+    width: 1120px;
+    margin-top: 40px;
+    margin-right: 55px;
+    background-position-x: 350px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px  black;
+}
+
+.mainpage .rec3 .graphbg
+{
+    background-image: url(../assests/img12.png);
+    border-radius: 50px;
+    height: 290px;
+    width: 1000px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+}
+
+.mainpage .rec1 .rec1-text
+{
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-right: 60px;
+}
+
+.mainpage .rec1 .rec1-text .h3
+{
+    font-size: 40px;
+}
+
+.mainpage .rec2 .rec2-text
+{
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-right: 60px;
+}
+
+.mainpage .rec2 .rec2-text .h3
+{
+    font-size: 40px;
+}
+
+.mainpage .rec3 .rec3-text
+{
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-right: 60px;
+}
+
+.mainpage .rec3 .rec3-text .h3
+{
+    font-size: 40px;
+}
+
+.mainpage .images-block
+{
+    margin-top: 50px;
+    height: 140vh;
+    border-radius: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 12px  black;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .rec1:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .rec2:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .rec3:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block1 .img-grid-1
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainpage .images-block .block2 .img-grid-2
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-1
+{
+    background-image: url(../assests/img6.jpg);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    margin-left: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-2
+{
+    background-image: url(../assests/img7.jpg);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-3
+{
+    background-image: url(../assests/img9.jpg);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-4
+{
+    background-image: url(../assests/img10.jpg);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-1
+{
+    background-image: url(../assests/img2.png);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    margin-left: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-2
+{
+    background-image: url(../assests/img3.png);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-3
+{
+    background-image: url(../assests/img4.png);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-4
+{
+    background-image: url(../assests/img5.png);
+    border-radius: 50px;
+    height: 260px;
+    width: 290px;
+    margin-top: 40px;
+    margin-right: 55px;
+    box-shadow: 5px 5px 10px  black;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.mainpage .images-block .block2 .img-text2
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-left: 50px;
+    font-size: 40px;
+}
+
+.mainpage .images-block .block1 .img-text1
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-left: 70px;
+    font-size: 40px;
+}
+
+.mainpage .images-block .block1 .see
+{
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.mainpage .images-block .block2 .see
+{
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-1:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-2:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-3:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block1 .img-grid-1 .grid-1-4:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-1:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-2:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-3:hover
+{
+    transform: scale(1.1);
+}
+
+.mainpage .images-block .block2 .img-grid-2 .grid-2-4:hover
+{
+    transform: scale(1.1);
+}
+
+.linkuu
+{
+    color: black;
+}

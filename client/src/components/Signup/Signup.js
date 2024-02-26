@@ -35,10 +35,10 @@ const Signup = () => {
     e.preventDefault();
     const { email, password, confirmPassword, FullName } = user;
     if (
-      password == "" ||
-      confirmPassword == "" ||
-      email == "" ||
-      FullName == ""
+      password === "" ||
+      confirmPassword === "" ||
+      email === "" ||
+      FullName === ""
     ) {
       setInterval(() => {
         setError("");

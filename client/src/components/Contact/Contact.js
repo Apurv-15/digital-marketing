@@ -35,12 +35,14 @@ const Contact = () => {
 
   return (
     <div className="service-top">
-      <div className="title">Get in Touch!</div>
+      <div className="title">
+        <h2>Get in Touch!</h2>
+      </div>
       <div className="sub">
         Got a question, proposal, project, or want to work <br /> together on
         something? Feel free to reach out.
       </div>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="form_con">
         <div className="input-row">
           <div className="side">
             <label htmlFor="name">Your Name</label>
@@ -76,9 +78,11 @@ const Contact = () => {
             onChange={onchange}
           />
         </div>
-        <button type="submit" disabled={loading}>
-          {loading ? "Sending..." : buttonMessage}
-        </button>
+        <div className="butt">
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending..." : buttonMessage}
+          </button>
+        </div>
       </form>
       {showToast && <div className="toast">Message Sent!</div>} {/* Toast */}
     </div>
