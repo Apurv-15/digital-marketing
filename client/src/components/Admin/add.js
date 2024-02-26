@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from '../Firebase/firebase.config'
@@ -16,12 +16,12 @@ const Add = ({ employees, setEmployees, setIsAdding, getEmployees }) => {
     e.preventDefault();
 
     if (!firstName || !lastName || !email || !salary || !date) {
-      return Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'All fields are required.',
-        showConfirmButton: true,
-      });
+      // return Swal.fire({
+      //   icon: 'error',
+      //   title: 'Error!',
+      //   text: 'All fields are required.',
+      //   showConfirmButton: true,
+      // });
     }
 
     const newEmployee = {
@@ -46,13 +46,13 @@ const Add = ({ employees, setEmployees, setIsAdding, getEmployees }) => {
     setIsAdding(false);
     getEmployees()
 
-    Swal.fire({
-      icon: 'success',
-      title: 'Added!',
-      text: `${firstName} ${lastName}'s data has been Added.`,
-      showConfirmButton: false,
-      timer: 1500,
-    });
+    // Swal.fire({
+    //   icon: 'success',
+    //   title: 'Added!',
+    //   text: `${firstName} ${lastName}'s data has been Added.`,
+    //   showConfirmButton: false,
+    //   timer: 1500,
+    // });
   };
 
   return (

@@ -14,7 +14,7 @@ import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 import Details from "./components/services/details.js";
 import SignUp from "./components/Signup/Signup";
 // import Login from "./components/Login/Login.jsx";
-
+import Footer from "./components/Footer/Footer.js";
 import Content from "./components/Hero_page/HeroPage.js";
 import Images from "./components/Hero_page/Image/Image.js";
 import Dashboard from "./components/Admin/Dashboard.js";
@@ -86,15 +86,16 @@ const App = () => {
         <NavBar />
         {/* <div> */}
         <MouseTrial />
-    
-        {/* <Content timeline={tl} /> */}
-        {/* <Images timeline={tl} ease={ease} /> */}
+       {/* <SignUp></SignUp> */}
+        <Content timeline={tl} /> 
+         <Images timeline={tl} ease={ease} />
        {/* <Details></Details> */}
-       <Dashboard></Dashboard>
+       {/* <Dashboard></Dashboard> */}
       {/* <Images timeline={tl} ease={ease} />
       <Service timeline={tl} /> */}
         {/* <Service /> */}
-
+        <Service></Service>
+        <Footer></Footer>
         <UserAuthContext>
           <Routes>
             <Route path="/signup" element={<SignUp />} />{" "}

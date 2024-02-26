@@ -68,6 +68,7 @@ const Signup = () => {
     }
   }
   return (
+    <div className="og">
     <div className="box">
       {err
         ? err && <p className="error">{err}</p>
@@ -119,6 +120,7 @@ const Signup = () => {
           Don't have an account? <a href="">Sign up </a>
         </p>
       </form>
+    </div>
     </div>
   );
 };
