@@ -7,7 +7,7 @@
 
 .mainpage .top-bg
 {
-    background-image: url(../assests/img1.jpg);
+    background-image: url(../../assests/img1.png);
     height: 50vh;
     background-position-x: center;
     background-position-y: center;
@@ -75,7 +75,7 @@
 
 .mainpage .rec1 .photobg
 {
-    background-image: url(../assests/img11.png);
+    background-image: url(../../assests/img11.png);
     border-radius: 50px;
     height: 290px;
     width: 1000px;
@@ -87,7 +87,7 @@
 
 .mainpage .rec2 .videobg
 {
-    background-image: url(../assests/img13.jpg);
+    background-image: url(../../assests/img13.jpg);
     border-radius: 50px;
     height: 290px;
     width: 1120px;
@@ -100,7 +100,7 @@
 
 .mainpage .rec3 .graphbg
 {
-    background-image: url(../assests/img12.png);
+    background-image: url(../../assests/img12.png);
     border-radius: 50px;
     height: 290px;
     width: 1000px;
@@ -188,7 +188,7 @@
 
 .mainpage .images-block .block1 .img-grid-1 .grid-1-1
 {
-    background-image: url(../assests/img6.jpg);
+    background-image: url(../../assests/img6.jpg);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -202,7 +202,7 @@
 
 .mainpage .images-block .block1 .img-grid-1 .grid-1-2
 {
-    background-image: url(../assests/img7.jpg);
+    background-image: url(../../assests/img7.jpg);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -215,7 +215,7 @@
 
 .mainpage .images-block .block1 .img-grid-1 .grid-1-3
 {
-    background-image: url(../assests/img9.jpg);
+    background-image: url(../../assests/img9.jpg);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -229,7 +229,7 @@
 
 .mainpage .images-block .block1 .img-grid-1 .grid-1-4
 {
-    background-image: url(../assests/img10.jpg);
+    background-image: url(../../assests/img10.jpg);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -242,7 +242,7 @@
 
 .mainpage .images-block .block2 .img-grid-2 .grid-2-1
 {
-    background-image: url(../assests/img2.png);
+    background-image: url(../../assests/img2.png);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -257,7 +257,7 @@
 
 .mainpage .images-block .block2 .img-grid-2 .grid-2-2
 {
-    background-image: url(../assests/img3.png);
+    background-image: url(../../assests/img3.png);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -271,7 +271,7 @@
 
 .mainpage .images-block .block2 .img-grid-2 .grid-2-3
 {
-    background-image: url(../assests/img4.png);
+    background-image: url(../../assests/img4.png);
     border-radius: 50px;
     height: 260px;
     width: 290px;
@@ -285,7 +285,7 @@
 
 .mainpage .images-block .block2 .img-grid-2 .grid-2-4
 {
-    background-image: url(../assests/img5.png);
+    background-image: url(../../assests/img5.png);
     border-radius: 50px;
     height: 260px;
     width: 290px;

@@ -26,7 +26,7 @@
 }
 
 .page .body .big-pic {
-    background-image: url(../assests/Founder.png);
+    background-image: url(../../assests/Founder.png);
     height: 500px;
     width: 500px;
     margin-left: 600px;
@@ -36,7 +36,7 @@
 }
 
 .page .body .email {
-    background-image: url(../assests/email-icon\ copy.png);
+    background-image: url(../../assests/email-icon\ copy.png);
     height: 40px;
     width: 40px;
     margin-top: 40px;
@@ -45,7 +45,7 @@
 }
 
 .page .body .phone {
-    background-image: url(../assests/phone-icon\ copy.png);
+    background-image: url(../../assests/phone-icon\ copy.png);
     height: 40px;
     width: 40px;
     margin-top: 40px;
