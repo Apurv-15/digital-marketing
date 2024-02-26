@@ -1,57 +1,56 @@
 .box {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 80px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .inputfield {
-    margin-bottom: 15px;
-  }
-  
-  .inputfield input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .inputfield input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .inputfield input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  .error {
-    color: #ff0000;
-    margin-bottom: 15px;
-  }
-  
-  .forget {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .forget a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  .forget a:hover {
-    text-decoration: underline;
-  }
-  
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputfield {
+  margin-bottom: 15px;
+}
+
+.inputfield input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.inputfield input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.inputfield input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+.forget {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forget a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 import Header from './header';
 import Table from './Table';
@@ -33,31 +33,31 @@ const Dashboard = ({ setIsAuthenticated }) => {
   };
 
   const handleDelete = id => {
-    Swal.fire({
-      icon: 'warning',
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      showCancelButton: true,
-      confirmButtonText: 'Yes, delete it!',
-      cancelButtonText: 'No, cancel!',
-    }).then(result => {
-      if (result.value) {
-        const [employee] = employees.filter(employee => employee.id === id);
+    // Swal.fire({
+    //   icon: 'warning',
+    //   title: 'Are you sure?',
+    //   text: "You won't be able to revert this!",
+    //   showCancelButton: true,
+    //   confirmButtonText: 'Yes, delete it!',
+    //   cancelButtonText: 'No, cancel!',
+    // }).then(result => {
+    //   if (result.value) {
+    //     const [employee] = employees.filter(employee => employee.id === id);
 
-        deleteDoc(doc(db, "employees", id));
+    //     deleteDoc(doc(db, "employees", id));
 
-        Swal.fire({
-          icon: 'success',
-          title: 'Deleted!',
-          text: `${employee.firstName} ${employee.lastName}'s data has been deleted.`,
-          showConfirmButton: false,
-          timer: 1500,
-        });
+    //     Swal.fire({
+    //       icon: 'success',
+    //       title: 'Deleted!',
+    //       text: `${employee.firstName} ${employee.lastName}'s data has been deleted.`,
+    //       showConfirmButton: false,
+    //       timer: 1500,
+    //     });
 
-        const employeesCopy = employees.filter(employee => employee.id !== id);
-        setEmployees(employeesCopy);
-      }
-    });
+  //       const employeesCopy = employees.filter(employee => employee.id !== id);
+  //       setEmployees(employeesCopy);
+  //     }
+  //   });
   };
 
   return (
@@ -95,5 +95,6 @@ const Dashboard = ({ setIsAuthenticated }) => {
     </div>
   );
 };
+
 
 export default Dashboard;
