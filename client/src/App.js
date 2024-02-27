@@ -16,6 +16,7 @@ import SignUp from "./components/Signup/Signup";
 // import Login from "./components/Login/Login.jsx";
 import Contact from "./components/Contact/Contact.js";
 import Collab from "./components/Collab/Collab.js";
+import Dashboard from "../src/components/Admin/Dashboard.js";
 
 import Content from "./components/Hero_page/HeroPage.js";
 // import Images from "./components/Hero_page/Image/Images.js";
@@ -105,7 +106,11 @@ const App = () => {
                   {/* <Content timeline={tl} /> */}
                   {/* <Service timeline={tl} /> */}
                   {/* <Collab /> */}
-                  {/* <Work /> */}
+                  
+                  <Details></Details>
+                  <Work></Work>
+                  <Dashboard></Dashboard>
+                  
                   {/* <Testimonials /> */}
                 </>
               }

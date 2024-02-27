@@ -26,14 +26,14 @@
 //   } from "../assets";
   
 import image1 from "./assets/img1.png";
-import image2 from "./assets/img2.png";
+import image2 from "./assets/img2.jpg";
 import image3 from "./assets/img3.png";
 import image4 from "./assets/img4.png";
 import image5 from "./assets/img5.png";
 import image6 from "./assets/img6.png";
 import image7 from "./assets/img7.png";
-import image8 from "./assets/img8.jpg";
-import image9 from "./assets/img9.jpg";
+import image8 from "./assets/img8.png";
+import image9 from "./assets/img9.png";
 // import image1 from "./assets/img1.png";
   export const navLinks = [
     {
@@ -188,7 +188,7 @@ import image9 from "./assets/img9.jpg";
       ],
     },
     {
-      title: "Public Relations (PR):",
+      title: "Public Relations",
       company_name: "",
       icon: image6,
       iconBg: "#E6DEDD",
@@ -198,7 +198,7 @@ import image9 from "./assets/img9.jpg";
       ],
     },
     {
-      title: "Branding and Design:",
+      title: "Branding and Design",
       company_name: "",
       icon: image7,
       iconBg: "#E6DEDD",
@@ -208,7 +208,7 @@ import image9 from "./assets/img9.jpg";
       ],
     },
     {
-      title: "Market Research:",
+      title: "Market Research",
       company_name: "",
       icon: image8,
       iconBg: "#E6DEDD",

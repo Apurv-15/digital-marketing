@@ -5,6 +5,7 @@ import Header from './header';
 import Table from './Table';
 import Add from './add';
 import Edit from './edit';
+import './dash.css';
 
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
 import { db } from '../Firebase/firebase.config'
@@ -16,7 +17,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getEmployees = async () => {
-    const querySnapshot = await getDocs(collection(db, "shavacchenna031005@gmail.com"));
+    const querySnapshot = await getDocs(collection(db, "atharva11@gmail.com"));
     const employees = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
     setEmployees(employees)
   }
@@ -61,13 +62,10 @@ const Dashboard = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container0123">
       {!isAdding && !isEditing && (
         <>
-          <Header
-            setIsAdding={setIsAdding}
-            setIsAuthenticated={setIsAuthenticated}
-          />
+          
           <Table
             employees={employees}
             handleEdit={handleEdit}

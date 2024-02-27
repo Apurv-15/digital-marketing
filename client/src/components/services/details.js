@@ -17,7 +17,7 @@
 
 // const Stats = () => {
 //   return (
-   
+
 //     <div className="stats">
 //       <div className="stat1">
 //         <h2 >50% Growth</h2>
@@ -71,22 +71,33 @@
 
 import React from "react";
 import "./details.css";
+import bgv from "./assets/kahani.mp4";
 
 const details = () => {
   return (
     <div className="container12">
       <div className="head">
         <div className="h">
-          <h1>Discover the Power of Digital Marketing with Impressive Results</h1>
-          <p>
-            Our digital marketing strategies have helped numerous businesses achieve
-            their goals and boost their online presence.
+          <h1 className="h1">
+            Discover the Power of Digital Marketing with Impressive Results
+          </h1>
+          <p className="p1">
+            Our digital marketing strategies have helped numerous businesses
+            achieve their goals and boost their online presence.
           </p>
         </div>
-       
+        <div className="video111">
+          <video width="816" height="420" controls preload="metadata">
+            <source
+              src={bgv}
+              type="video/mp4"
+            />
+            Video not supported.
+          </video>
+        </div>
       </div>
-      
-      <div className="stats">
+
+      {/* <div className="stats">
       
         <div className="stat1">
         <div className="testimonial">
@@ -103,9 +114,7 @@ const details = () => {
           <p>Conversion Rate</p>
           <p>Higher ROI and Customer Engagement with Targeted Marketing Strategies</p>
         </div>
-      </div>
-      
-     
+      </div> */}
     </div>
   );
 };
