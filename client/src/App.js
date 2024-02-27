@@ -19,12 +19,15 @@ import Collab from "./components/Collab/Collab.js";
 
 import Content from "./components/Hero_page/HeroPage.js";
 // import Images from "./components/Hero_page/Image/Images.js";
+import Work from "./components/Work/Work.js";
 
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
 import NavBar from "./components/Navbar/Navbar.js";
+import Testimonials from "./components/Testimonials/Testimonials.js";
 
 import "./App.css";
+import Connect from "./components/Connect/Connect.js"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,9 +102,11 @@ const App = () => {
               path="/"
               element={
                 <>
-                  <Content timeline={tl} />
-                  <Service timeline={tl} />
-                  <Collab />
+                  {/* <Content timeline={tl} /> */}
+                  {/* <Service timeline={tl} /> */}
+                  {/* <Collab /> */}
+                  {/* <Work /> */}
+                  {/* <Testimonials /> */}
                 </>
               }
             />
@@ -115,6 +120,7 @@ const App = () => {
             <Route path="/res3" element={<Res3 />} />
             <Route path="/res4" element={<Res4 />} />
             <Route path="/form_response" element={<Thanks />} />
+            <Route path="/work" element={<Work />} />
           </Routes>
         </UserAuthContext>
         {/* </div> */}
