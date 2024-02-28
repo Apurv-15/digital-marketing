@@ -25,7 +25,7 @@ import Connect from "./components/Connect/Connect.js";
 import Strategies from "./components/Strategies/Strategies.js";
 import Signup from "./components/Signup/Signup.js";
 import NavBtn from "./components/Navbar_new/index2.js";
-import LoginNew from "./components/Log_in_auth0/LoginButton.js";
+// import LoginNew from "./components/Log_in_auth0/LoginButton.js";
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -93,7 +93,7 @@ const App = () => {
                   }
                 />
                 <Route path="/Contact" element={<Contact />} />
-                <Route path="/Signup" element={<LoginNew />} />
+                {/* <Route path="/Signup" element={<LoginNew />} /> */}
 
                 <Route path="/productadd" element={<Product1 />} />
                 <Route path="/product22" element={<Product22 />} />
