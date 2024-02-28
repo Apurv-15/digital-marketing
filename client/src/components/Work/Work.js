@@ -24,8 +24,8 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
@@ -48,8 +48,8 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
@@ -72,26 +72,15 @@ const Work = () => {
       <hr
         style={{
           background: "black",
-          color: "black",
-          borderColor: "black",
+          color: " rgb(192, 124, 0)",
+          borderColor: " rgb(192, 124, 0)",
           height: "1px",
           width: "700px",
         }}
       />
       <div className="images-block">
         <div className="block1">
-          <div className="img-text1">
-            Photography
-            <hr
-              style={{
-                background: "black",
-                color: "black",
-                borderColor: "black",
-                height: "1px",
-                width: "700px",
-              }}
-            />
-          </div>
+          <div className="img-text1">Photography</div>
           <div className="img-grid-1">
             <div className="grid-1-1"></div>
             <div className="grid-1-2"></div>
@@ -107,19 +96,19 @@ const Work = () => {
             </a>
           </div>
         </div>
+        <div className="linu">
+          <hr
+            style={{
+              background: "black",
+              color: "black",
+              borderColor: "black",
+              height: "1px",
+              width: "1000px",
+            }}
+          />
+        </div>
         <div className="block2">
-          <div className="img-text2">
-            Graphics Designing
-            <hr
-              style={{
-                background: "black",
-                color: "black",
-                borderColor: "black",
-                height: "1px",
-                width: "600px",
-              }}
-            />
-          </div>
+          <div className="img-text2">Graphics Designing</div>
           <div className="img-grid-2">
             <div className="grid-2-1"></div>
             <div className="grid-2-2"></div>

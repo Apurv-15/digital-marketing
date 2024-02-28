@@ -12,6 +12,9 @@ import Res4 from "./components/Features/ProductPage3/Res4.js";
 import MouseTrial from "./components/MouseTrail/MouseTrail.js";
 // import Details from "./components/services/details.js";
 import Contact from "./components/Contact/Contact.js";
+import Collab from "./components/Collab/Collab.js";
+import Dashboard from "../src/components/Admin/Dashboard.js";
+
 import Content from "./components/Hero_page/HeroPage.js";
 import Work from "./components/Work/Work.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
