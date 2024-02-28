@@ -92,6 +92,7 @@ const Product22 = () => {
                   onChange={handleProductNameChange}
                   placeholder="Enter name"
                   required
+                  autoComplete="off"
                 />
               </div>
 
@@ -101,6 +102,7 @@ const Product22 = () => {
                 value={ageGroup}
                 onChange={handleDropDown}
                 required
+                autoComplete="off"
               >
                 <option value="" disabled selected>
                   Select age group
@@ -119,6 +121,7 @@ const Product22 = () => {
                 onChange={handleLocation}
                 placeholder="Enter Location..."
                 required
+                autoComplete="off"
               />
 
               <label htmlFor="Product_Name">Enter Budget</label>
@@ -131,6 +134,7 @@ const Product22 = () => {
                   onChange={handleBudgetChange}
                   placeholder="Enter Maximum budget"
                   required
+                  autoComplete="off"
                 />
               </div>
 

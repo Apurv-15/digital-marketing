@@ -37,8 +37,8 @@ const Strategies = () => {
     }
   ]);
   return (
-    <div className="services">
-      <div className="container">
+    <div className="services_122">
+      <div className="container_12345">
         <div className="services__header">
           <div className="common">
           <h3 className="heading">{header.mainHeader}</h3>

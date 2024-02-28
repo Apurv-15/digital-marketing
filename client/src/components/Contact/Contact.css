@@ -9,12 +9,12 @@
   background-color: black;
 }
 
-.title {
+.title_11 {
   display: flex;
-  font-size: 100px;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 600;
   margin-bottom: 30px;
-  color: #8d61ec;
+  color: whitesmoke;
 }
 
 .sub {
@@ -51,7 +51,6 @@ textarea {
   background: transparent;
   outline: none;
   text-align: left;
-  font-size: 24.5px;
   width: 100%;
   color: #fff;
   padding: 0.6em;

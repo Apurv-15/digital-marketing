@@ -10,6 +10,7 @@ const Res2 = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { currentuser } = useAuth();
+  
 
   const productName1 = location.state?.productName;
   const locationName1 = location.state?.locationName;

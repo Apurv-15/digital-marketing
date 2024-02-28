@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.title {
+.title123 {
   font-size: 65px !important;
   font-weight: 800 !important;
   position: relative;
@@ -29,7 +29,7 @@
   margin-top: 2rem;
 }
 
-.title::after {
+.title123::after {
   content: "";
   position: absolute;
   background: #fff;
@@ -41,7 +41,7 @@
   transition: width 0.2s linear;
 }
 
-.title:hover::after {
+.title123:hover::after {
   width: 100%;
   left: 0;
   right: unset;
@@ -68,13 +68,13 @@
   text-transform: uppercase;
 }
 
-.title123 {
+.title123123 {
   color: #fff !important;
   margin-top: 2rem;
   position: relative;
 }
 
-.title123::after {
+.title123123::after {
   content: "";
   position: absolute;
   background: #fff;
@@ -86,11 +86,11 @@
   transition: width 0.2s linear;
 }
 
-.title123 h3:hover + ::after {
+.title123123 h3:hover + ::after {
   width: 100%;
 }
 
-.title123 h3 {
+.title123123 h3 {
   display: flex;
   justify-content: center;
   align-items: center;

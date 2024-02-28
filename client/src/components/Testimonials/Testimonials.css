@@ -1,94 +1,100 @@
-/* Services */
 .services {
-    padding: 10px 0;
-    color: #fff;
-  }
-  
-  .testi{
-    color: white;
-    margin-left: 20px;
-    font-size: 1.7rem;
-  }
-  
-  .what{
-    color:rgb(184, 86, 151) ;
-    margin-left: 20px;
-    font-size: 2.5rem;
-  }
-  
-  
-  .mainHeader {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #fff;
-    white-space: nowrap; /* Ensures the text stays in one line */
-  }
-  /* .mainContent {
-    font-size: 16px;
-    color: #dfdfdf;
-  } */
-  
-  .services__box {
-    padding: 40px;
-    background: #0f0e0e;
-    color: #fff;
-    margin: 20px;
-    border-radius: 35px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-    transition: box-shadow 0.3s ease; /* Transition effect */
-  
-  }
-  .services__box:hover {  
-    /* background: #210233; */
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 20px rgba(46, 39, 39, 0.6); /* Increase shadow on hover */
-    opacity: 0.8; /* Reduce opacity on hover */
-    border-color: #ff4a57;
-  
-  }
-  .testimonyImage {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    border-radius: 50%; /* Ensure the image is round */
-    margin-bottom: 15px;
-  }
-  .services__box-header {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  .services__box-p {
-    font-size: 14px;
-    color: #dfdfdf;
-  }
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
-  
-  .h-650 {
-    height: 650px;
-  }
-  .alignCenter {
-    align-items: center;
-  }
-  .justifyConter {
-    justify-content: center;
-  }
-  
-  /* Grid System */
-  .row {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  
-  .col-4 {
-    width: 33.33333333333333%;
-  }
+  padding: 10px 0;
+  color: #fff;
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testi {
+  color: white;
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+
+.what {
+  color: rgb(195, 29, 140);
+  margin-left: 20px;
+  font-size: 2.5rem;
+}
+
+.mainHeader {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+  white-space: nowrap; /* Ensures the text stays in one line */
+}
+/* .mainContent {
+  font-size: 16px;
+  color: #dfdfdf;
+} */
+
+.services__box {
+  padding: 40px;
+  background: #0f0e0e;
+  color: #fff;
+  margin: 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add shadow */
+  transition: box-shadow 0.3s ease; /* Transition effect */
+}
+.services__box:hover {
+  /* background: #210233; */
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(160, 139, 139, 0.6); /* Increase shadow on hover */
+  opacity: 0.8; /* Reduce opacity on hover */
+  border-color: #ff4a57;
+}
+.testimonyImage {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Ensure the image is round */
+  margin-bottom: 15px;
+}
+.services__box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.services__box-p {
+  font-size: 14px;
+  color: #dfdfdf;
+}
+.container_12_12 {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.h-650 {
+  height: 650px;
+}
+.alignCenter {
+  align-items: center;
+}
+.justifyConter {
+  justify-content: center;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333333333333%;
+}
+
+.common {
+  display: grid;
+  justify-content: left;
+}

@@ -1,63 +1,48 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-attachment: scroll;
 }
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 .orange-text1 {
-  /* color: rgb(255, 0, 255); */
-  /* background: #cf13bc;
-  background: linear-gradient(to right, #cf13bc 1%, #e6bfdf 61%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   background: linear-gradient(90deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .showcase {
-  /* position: absolute; */
-  right: 0;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #020000; */
   background: hsla(0, 0%, 0%, 1);
-
-  /* background: radial-gradient(
-    circle,
-    hsla(0, 0%, 0%, 1) 65%,
-    hsla(236, 100%, 20%, 1) 100%
-  );
-
-  background: -moz-radial-gradient(
-    circle,
-    hsla(0, 0%, 0%, 1) 65%,
-    hsla(236, 100%, 20%, 1) 100%
-  );
-
-  background: -webkit-radial-gradient(
-    circle,
-    hsla(0, 0%, 0%, 1) 65%,
-    hsla(236, 100%, 20%, 1) 100%
-  ); */
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#000764", GradientType=1 );
   transition: 0.5s;
   z-index: 2;
   flex-wrap: wrap;
 }
+
 .showcase.active {
   right: 300px;
 }
+
+.left-column {
+  flex-grow: 1;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
 .left-text {
   position: relative;
   z-index: 10;
-  /* margin-top: 90px; */
 }
 
 .left-text h2 {
@@ -72,14 +57,14 @@
   color: #fec1c1;
   margin: 28px 0;
   font-weight: 500;
-  max-width: 700px;
+  max-width: 600px;
 }
+
 .left-text a {
   display: inline-block;
   font-size: 1em;
   background: #fff;
   padding: 10px 30px;
-  /* left-text-transform: uppercase; */
   text-decoration: none;
   font-weight: 500;
   margin-top: 10px;
@@ -87,46 +72,50 @@
   letter-spacing: 2px;
   transition: 0.2s;
 }
+
 .left-text a:hover {
   letter-spacing: 6px;
 }
 
-@media (max-width: 991px) {
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .left-text h2 {
-    font-size: 3em;
-  }
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
 
-  .bg-image {
-    /* flex-wrap: wrap; */
+.images {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.images .box1,
+.images .box2,
+.images .box3 {
+  flex-grow: 1;
+  margin: 0 10px;
+  max-width: 350px;
+  width: 100%;
+  border: 0.5px solid gray;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .images {
     flex-direction: column;
   }
 }
-
-.bg-image {
-  display: flex;
-  flex-grow: 5;
-  position: absolute; /* Position the animation absolutely within its container */
-  top: 66%; /* Adjust top position */
-  left: 80%; /* Adjust left position */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Center the animation horizontally and vertically */
-  margin: 0; /* Remove margin if not needed */
-  width: 50%; /* Adjust the width of the animation */
-  height: auto; /* Maintain aspect ratio */
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .custom-button {
-  /* background-image: linear-gradient(to right, #ff00cc 0%, #00bfff 61%, #ff00cc); */
-  margin: 10px;
+  margin: 10px 0;
   padding: 12px 20px;
   text-align: center;
-
   font-size: 22px;
   font-weight: 700;
   transition: 0.5s;
@@ -137,10 +126,17 @@
   cursor: pointer;
 }
 
-.showcase,
-images {
-  display: flex;
-  /* justify-content: flex-end; */
-  width: 100%;
-  margin-right: 2rem;
+@media (max-width: 991px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .left-text h2 {
+    font-size: 3em;
+  }
+
+  .right-column {
+    margin-top: 20px;
+  }
 }

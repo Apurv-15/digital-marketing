@@ -1,91 +1,57 @@
 import React, { useRef, useEffect } from "react";
-import "./HeroPage.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import "./Image/Image.css";
 import { useNavigate } from "react-router-dom";
+import gsap from "gsap";
+import "./HeroPage.css";
+// import "./Image/Image.css";
 
 const HeroPage = ({ timeline, ease }) => {
   const navigate = useNavigate();
-  let h2 = useRef(null);
-  let pText = useRef(null);
-  let image1 = useRef(null);
-  let image2 = useRef(null);
-  let image3 = useRef(null);
+  const h2Ref = useRef(null);
+  const pTextRef = useRef(null);
+  // const image1Ref = useRef(null);
+  // const image2Ref = useRef(null);
+  // const image3Ref = useRef(null);
 
-  useEffect(() => {
-    timeline
-      .from(
-        [h2.children, pText],
-        1,
-        {
-          opacity: 0,
-          y: "100",
-          skewY: 10,
-          stagger: {
-            amount: 0.4,
-          },
-        },
-        "-=1"
-      )
-      .from(
-        image1,
-        1.2,
-        {
-          y: 1200,
-          ease: ease,
-          opacity: 0,
-        },
-        "-=1"
-      )
-      .from(
-        image1,
-        2,
-        {
-          scale: 1.6,
-          ease: ease,
-        },
-        "-=1.2"
-      )
-      .from(
-        image2,
-        1.2,
-        {
-          y: 1200,
-          ease: ease,
-          opacity: 0,
-        },
-        "-=1"
-      )
-      .from(
-        image2,
-        2,
-        {
-          scale: 1.6,
-          ease: ease,
-        },
-        "-=1"
-      )
-      .from(
-        image3,
-        1.2,
-        {
-          y: 1200,
-          ease: ease,
-          opacity: 0,
-        },
-        "-=1"
-      )
-      .from(
-        image3,
-        2,
-        {
-          scale: 1.6,
-          ease: ease,
-        },
-        "-=1"
-      );
-  }, [timeline, ease]);
+  // useEffect(() => {
+  //   const animationTimeline = timeline || gsap.timeline();
+  //   const animationEase = ease || "power3.out";
+
+  //   animationTimeline
+  //     .from(
+  //       [h2Ref.current.children, pTextRef.current],
+  //       1,
+  //       {
+  //         opacity: 0,
+  //         y: "100",
+  //         skewY: 10,
+  //         stagger: {
+  //           amount: 0.4,
+  //         },
+  //       },
+  //       "-=1"
+  //     )
+  //     .from(
+  //       [image1Ref.current, image2Ref.current, image3Ref.current],
+  //       1.2,
+  //       {
+  //         y: 1200,
+  //         ease: animationEase,
+  //         opacity: 0,
+  //       },
+  //       "-=1"
+  //     )
+  //     .from(
+  //       [image1Ref.current, image2Ref.current, image3Ref.current],
+  //       2,
+  //       {
+  //         scale: 1.6,
+  //         ease: animationEase,
+  //       },
+  //       "-=1.2"
+  //     );
+  // }, [timeline, ease]);
 
   const handleButtonClick = () => {
     navigate("/productadd");
@@ -95,7 +61,7 @@ const HeroPage = ({ timeline, ease }) => {
     <div>
       <section className="showcase">
         <div className="left-text">
-          <div ref={(el) => (h2 = el)}>
+          <div ref={h2Ref}>
             , .
             <h2>
               <span className="orange-text1">Elevating </span>Experiences
@@ -108,7 +74,7 @@ const HeroPage = ({ timeline, ease }) => {
             </h2>
           </div>
 
-          <p ref={(el) => (pText = el)}>
+          <p ref={pTextRef}>
             At Kahanikars, we offer a comprehensive suite of digital marketing
             services designed to elevate your Brand and expand your reach!!
           </p>
@@ -123,11 +89,11 @@ const HeroPage = ({ timeline, ease }) => {
             {/* Add more buttons or components as needed */}
           </Stack>
         </div>
-        <div className="images">
-          <div className="box1" ref={(el) => (image1 = el)}></div>
-          <div className="box2" ref={(el) => (image2 = el)}></div>
-          <div className="box3" ref={(el) => (image3 = el)}></div>
-        </div>
+        {/* <div className="images">
+          <div className="box1" ref={image1Ref}></div>
+          <div className="box2" ref={image2Ref}></div>
+          <div className="box3" ref={image3Ref}></div>
+        </div> */}
       </section>
     </div>
   );

@@ -1,121 +1,4 @@
-/* Service.css
-
-body {
-  background: radial-gradient(
-    circle,
-    hsla(0, 0%, 0%, 1) 65%,
-    hsla(236, 100%, 20%, 1) 100%
-  );
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.vertical-timeline-element {
-  cursor: pointer;
-  perspective: 1000px;
-}
-
-.vertical-timeline-element .front-content,
-.vertical-timeline-element .back-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.vertical-timeline-element .front-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  transition: transform 0.5s ease;
-}
-
-.vertical-timeline-element .back-content {
-  display: none;
-  transform: rotateY(180deg);
-  color: black;
-  transition: transform 0.5s ease;
-}
-
-.vertical-timeline-element:hover .front-content {
-  transform: rotateY(180deg);
-}
-
-.vertical-timeline-element:hover .back-content {
-  display: flex;
-  transform: rotateY(0deg);
-}
-
-.inner123 {
-  background: black;
-  width: 30rem;
-  height: 27rem;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-}
-
-.inner123:hover {
-  transform: rotateY(180deg);
-}
-
-.fromt,
-.back {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.fromt {
-  color: #fff;
-  background: black;
-  display: flex;
-  align-items: center;
-  border-radius: 30px;
-  justify-content: center;
-  font-size: 15px;
-  transform: rotateY(0deg);
-}
-
-.back {
-  background: black;
-  color: #fff;
-  align-items: center;
-  display: flex;
-  border-radius: 30px;
-  justify-content: center;
-  font-size: 15px;
-  width: 30rem;
-  height: 28rem;
-  transform: rotateY(180deg); 
-}
-
-.icon1 {
-  background-size: cover;
-  width: 30rem;
-  height: 28rem;
-  border-radius: 30px;
-  padding: 0%;
-  margin-left: 0px;
-} */
-
-
-/* body {
-  background: radial-gradient(
-    circle,
-    hsla(0, 0%, 0%, 1) 65%,
-    hsla(236, 100%, 20%, 1) 100%
-  );
-} */
-.out{
+.out {
   background: black;
   width: 100%;
   height: 100%;
@@ -139,6 +22,7 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 30px;
 }
 
 .vertical-timeline-element .front-content {
@@ -196,6 +80,7 @@ body {
   justify-content: center;
   font-size: 15px;
   transform: rotateY(0deg);
+  margin-top: -30rem;
 }
 
 .back {
@@ -208,13 +93,13 @@ body {
   font-size: 15px;
   width: 30rem;
   height: 28rem;
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 .icon1 {
   background-size: cover;
   width: 30rem;
-  height: 28rem;
+  height: 25rem;
   border-radius: 30px;
   padding: 0%;
   margin-left: 0px;

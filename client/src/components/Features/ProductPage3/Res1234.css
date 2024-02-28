@@ -18,8 +18,7 @@
   box-shadow: 17px 17px 54px #706a89, -17px -17px 54px #ffffff;
 }
 
-.components-111,
-h1 {
+.components-111 h1 {
   display: flex;
   justify-content: center;
   align-items: center;

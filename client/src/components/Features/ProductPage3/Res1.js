@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Res1234.css";
+import Lottie from "react-lottie";
+import animationData from "../../Images and video/Animation_image_res1.json";
+import animationData2 from "../../Images and video/Animation_video_res1.json";
 
 const Res1 = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -43,7 +46,22 @@ const Res1 = () => {
       }
     }
   };
-
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const lottieOptions2 = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData2,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const handleCardSelect = (index) => {
     setSelectedCard(index);
   };
@@ -57,9 +75,10 @@ const Res1 = () => {
                 className={`card ${selectedCard === 0 ? "selected" : ""}`}
                 onClick={() => handleCardSelect(0)}
               >
-                <img
-                  src="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"
-                  alt="green iguana"
+                <Lottie
+                  options={lottieOptions}
+                  height={150} // Set the height as per your design
+                  width={150} // Set the width as per your design
                 />
                 {selectedCard === 0 && <div className="check-icon"></div>}
                 <div className="card-content">
@@ -70,10 +89,12 @@ const Res1 = () => {
                 className={`card ${selectedCard === 1 ? "selected" : ""}`}
                 onClick={() => handleCardSelect(1)}
               >
-                <img
-                  src="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"
-                  alt="green iguana"
+                <Lottie
+                  options={lottieOptions2}
+                  height={150} // Set the height as per your design
+                  width={150} // Set the width as per your design
                 />
+
                 {selectedCard === 1 && <div className="check-icon"></div>}
                 <div className="card-content">
                   <h5>Text</h5>

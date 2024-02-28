@@ -118,6 +118,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 4rem;
+  margin-top: -2rem;
 }
 .button-container12 button:hover {
   background-color: #d81b60; /* Change the background color on hover */

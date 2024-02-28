@@ -1,18 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { ThemeProvider, createTheme } from "@mui/material/styles"; // Import createTheme
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-// import QAPI from "./components/Cases/qapi";
+import { Auth0Provider } from "@auth0/auth0-react";
+import { createRoot } from "react-dom/client";
 
-// window.QAPI = QAPI; 
+// Create a Material-UI theme
+const theme = createTheme();
 
-const theme = createTheme(); // Create a Material-UI theme
+// Set up Auth0 configuration
+const auth0Config = {
+  domain: "dev-resf1oi2v4s5fuox.us.auth0.com",
+  clientId: "s0TTJ9WIUhOKTHECgauSNgC64RzVlLVX",
+  authorizationParams: {
+    redirect_uri: window.location.origin,
+  },
+};
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <App />
+    <Auth0Provider {...auth0Config}>
+      <App />
+    </Auth0Provider>
   </ThemeProvider>,
   document.getElementById("root")
 );

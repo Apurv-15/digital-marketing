@@ -1,9 +1,9 @@
 import React from "react";
-// import "./Testimonials.css";
+import "./Testimonials.css";
 import { Slide } from "react-awesome-reveal";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
@@ -12,7 +12,7 @@ import profilePic5 from "../../img/profile5.jpg";
 import profilePic6 from "../../img/profile6.jpg";
 
 const Testimonials = () => {
-  const testimonialsData = [
+  const [state] = React.useState([
     {
       id: 1,
       image: profilePic1,
@@ -55,51 +55,39 @@ const Testimonials = () => {
       review:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula lectus in nulla fringilla, id iaculis velit varius.nteger in lorem at ipsum gravida aliquet nec quis lorem.",
     },
-  ];
+  ]);
 
-  const sliderSettings = {
+  const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 500, // Adjusted speed for a smoother transition
-    slidesToShow: 3,
+    speed: 150,
+    slidesToShow: 3, // Show 3 testimonials at a time
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 768, // Adjust breakpoints as needed
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (
-    <div className="testimonials">
-      <div className="container">
-        <div className="testimonials__header">
+    <div className="services">
+      <div className="container_12_12">
+        <div className="services__header">
           <div className="common">
             <Slide direction="left">
               <span className="testi">TESTIMONIALS</span>
-              <h1 className="what">What Clients Say....</h1>
+              <h1 className="what">What Our Clients Say....</h1>
             </Slide>
           </div>
 
-          <Slider {...sliderSettings}>
-            {testimonialsData.map((testimonial) => (
-              <div key={testimonial.id}>
-                <div className="testimonials__box">
+          <Slider {...settings}>
+            {state.map((info) => (
+              <div key={info.id}>
+                <div className="services__box">
                   <img
-                    src={testimonial.image}
+                    src={info.image}
                     alt="Testimony"
                     className="testimonyImage"
                   />
-                  <div className="testimonials__box-header">
-                    {testimonial.starRating}
-                  </div>
-                  <div className="testimonials__box-p">
-                    {testimonial.review}
-                  </div>
+                  <div className="services__box-header">{info.starRating}</div>
+                  <div className="services__box-p">{info.review}</div>
                 </div>
               </div>
             ))}
