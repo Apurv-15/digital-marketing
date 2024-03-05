@@ -9,7 +9,7 @@ const Res2 = () => {
   const [selectedCard1, setselectedCard1] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const { currentuser } = useAuth0();
+  const { user } = useAuth0();
 
   const productName1 = location.state?.productName;
   const locationName1 = location.state?.locationName;
@@ -17,12 +17,11 @@ const Res2 = () => {
   const ageGroup1 = location.state?.ageGroup;
   const res1_card_data = location.state?.cardData;
 
-  console.log(currentuser);
   console.log("Product Name: ", productName1);
   console.log("Location Name: ", locationName1);
   console.log("Budget: ", budget1);
   console.log("Age Group: ", ageGroup1);
-  console.log("Card Data: ", res1_card_data[0]);
+  console.log("Card Data: ", res1_card_data);
 
   const handleButtonClick2 = async () => {
     if (selectedCard1 !== null) {
@@ -36,7 +35,7 @@ const Res2 = () => {
       }
 
       try {
-        const userEmail = currentuser?.email;
+        const userEmail = user?.email;
 
         const userCollectionRef = collection(db, userEmail);
         const productDocRef = doc(userCollectionRef, productName1);
@@ -53,6 +52,8 @@ const Res2 = () => {
         localStorage.removeItem("productFormData");
         console.log("db added successfully");
         playSoundEffect();
+
+        // navigate("/form_response", { state: { productName1 } });
       } catch (error) {
         console.error(error);
       }
@@ -60,6 +61,7 @@ const Res2 = () => {
     }
   };
   const playSoundEffect = () => {
+    console.log("Attempting to play sound effect");
     const audio = new Audio("../../Images and video/notify_sound.mp3");
     audio.play();
   };

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import UserAuthContext from "./components/Auth0/UserAuthContext.js";
+
 import Thanks from "./components/Features/Thanks_response/Thank.js";
 import Service from "./components/services/Service.js";
 import Res1 from "./components/Features/ProductPage3/Res1.js";
@@ -80,7 +80,7 @@ const App = () => {
             <NavBtn />
 
             {/* <MouseTrial /> */}
-            <UserAuthContext>
+          
               <Routes>
                 <Route
                   path="/"
@@ -109,7 +109,7 @@ const App = () => {
                 <Route path="/work" element={<Work />} />
                 <Route path="/collab" element={<Collab />} />
               </Routes>
-            </UserAuthContext>
+           
           </Router>
         </>
       )}

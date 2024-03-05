@@ -9,7 +9,7 @@ const Res4 = () => {
   const [selectedCard4, setselectedCard4] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const { currentuser } = useAuth0();
+  const { user } = useAuth0();
 
   const productName1 = location.state?.productName;
   const locationName1 = location.state?.locationName;
@@ -29,7 +29,7 @@ const Res4 = () => {
       }
 
       try {
-        const userEmail = currentuser?.email;
+        const userEmail = user?.email;
 
         const userCollectionRef = collection(db, userEmail);
         const productDocRef = doc(userCollectionRef, productName1);

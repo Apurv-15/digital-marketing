@@ -1,10 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import App from "./App";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Auth0Provider } from "@auth0/auth0-react";
-import { createRoot } from "react-dom/client";
+
+// Import createRoot directly from "react-dom"
+import { createRoot } from "react-dom";
 
 // Create a Material-UI theme
 const theme = createTheme();
@@ -18,6 +20,7 @@ const auth0Config = {
   },
 };
 
+// Use createRoot instead of ReactDOM.render
 const root = createRoot(document.getElementById("root"));
 
 root.render(
