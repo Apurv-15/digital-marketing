@@ -5,6 +5,7 @@
 .navbar {
   padding: 20px 60px;
   background-color: white;
+  z-index: 1049;
 }
 
 .nav-item:hover {

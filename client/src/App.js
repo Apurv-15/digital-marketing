@@ -16,7 +16,7 @@ import Content from "./components/Hero_page/HeroPage.js";
 import Work from "./components/Work/Work.js";
 import Product1 from "./components/Features/ProductPage1/Product1.js";
 import Product22 from "./components/Features/ProductPage2/Product22.js";
-import NavBar from "./components/Navbar/Navbar.js";
+
 import Testimonials from "./components/Testimonials/Testimonials.js";
 import "./App.css";
 import Loader from "./components/Loader/Loader.js";
@@ -25,7 +25,10 @@ import Connect from "./components/Connect/Connect.js";
 import Strategies from "./components/Strategies/Strategies.js";
 import Signup from "./components/Signup/Signup.js";
 import NavBtn from "./components/Navbar_new/index2.js";
+import Dashboard from "./components/Admin/dashboard.js";
+import HeroPage2 from "./components/Hero_page/Light/HeroPage2.js";
 // import LoginNew from "./components/Log_in_auth0/LoginButton.js";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -84,17 +87,17 @@ const App = () => {
                   element={
                     <>
                       <Content timeline={tl} />
-                      <Service />
+                      {/* <HeroPage2 /> */}
+                      {/* <Service />
                       <Collab />
                       <Strategies />
                       <Connect />
-                      <Testimonials />
+                      <Testimonials /> */}
                     </>
                   }
                 />
                 <Route path="/Contact" element={<Contact />} />
-                {/* <Route path="/Signup" element={<LoginNew />} /> */}
-
+            
                 <Route path="/productadd" element={<Product1 />} />
                 <Route path="/product22" element={<Product22 />} />
                 <Route path="/res1" element={<Res1 />} />
@@ -102,6 +105,9 @@ const App = () => {
                 <Route path="/res3" element={<Res3 />} />
                 <Route path="/res4" element={<Res4 />} />
                 <Route path="/form_response" element={<Thanks />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/work" element={<Work />} />
+                <Route path="/collab" element={<Collab />} />
               </Routes>
             </UserAuthContext>
           </Router>

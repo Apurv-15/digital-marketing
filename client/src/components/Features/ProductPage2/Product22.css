@@ -24,20 +24,22 @@
   overflow-y: scroll;
   /* background: var(--greyLight-1); */
   /* background: #d0c4fd; */
+  background: #d0c4fd;
 
   @media screen and (min-width: 900px) {
-    font-size: 75%;
+    font-size: 2vh;
   }
 }
 
 .container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
   /* background: var(--greyLight-1); */
-  background: #d0c4fd;
+  /* background: #d0c4fd; */
 }
 
 .components {
@@ -53,12 +55,13 @@
   /* grid-row-gap: 2.5rem; */
   align-items: center;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 /* Your specific styles here */
 
 .form__input {
-  width: 350%;
+  width: 35rem;
   height: 4rem;
   border: none;
   border-radius: 1rem;
@@ -133,21 +136,21 @@
   }
 
   .container_1 {
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; /* Optional: Center the content horizontally */
+    align-items: center;
+    /* flex-wrap: wrap; */
   }
-
-  .lottie-animation {
+   .lottie-animation {
     align-items: center;
     justify-content: center;
-    flex-direction: row; /* Change to column layout */
+    flex-direction: row;
   }
 
   .product_info {
     flex-direction: row;
 
-    padding-left: 0; /* No need for left padding on smaller screens */
+    padding-left: 0;
   }
 }
 
@@ -182,7 +185,7 @@ label[for="Product_Name"] {
 }
 
 .select_1 {
-  width: 350%;
+  width: 35rem;
   height: 4rem;
   border: none;
   border-radius: 1rem;
@@ -193,4 +196,46 @@ label[for="Product_Name"] {
   background: none;
   font-family: inherit;
   color: black;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+  }
+  .components {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    height: fit-content;
+    flex-basis: 200;
+  }
+
+  .select_1 {
+    width: 40vh;
+  }
+
+  .container_1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product_info {
+    display: flex;
+    /* justify-content: center; */
+    /* max-width: 41px; */
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+  .button_1 {
+    display: flex;
+
+    /* width: max-content; */
+  }
 }

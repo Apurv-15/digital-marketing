@@ -3,14 +3,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./Res1234.css";
 import { db } from "../../Firebase/firebase.config";
 import { collection, doc, setDoc } from "firebase/firestore";
-import { useAuth } from "../../Auth0/UserAuthContext";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Res2 = () => {
   const [selectedCard1, setselectedCard1] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const { currentuser } = useAuth();
-  
+  const { currentuser } = useAuth0();
 
   const productName1 = location.state?.productName;
   const locationName1 = location.state?.locationName;
@@ -53,11 +52,16 @@ const Res2 = () => {
         });
         localStorage.removeItem("productFormData");
         console.log("db added successfully");
+        playSoundEffect();
       } catch (error) {
         console.error(error);
       }
       navigate("/form_response", { state: { productName1 } });
     }
+  };
+  const playSoundEffect = () => {
+    const audio = new Audio("../../Images and video/notify_sound.mp3");
+    audio.play();
   };
   const handleCardSelect = (index) => {
     setselectedCard1(index);

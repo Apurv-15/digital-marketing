@@ -5,7 +5,6 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -15,10 +14,11 @@ const fadeIn = keyframes`
   }
 `;
 
-
 // Nav: Represents the navbar container element. It sets the background color, height, flex layout, padding, and applies a fade-in animation.
 
 export const Nav = styled.nav`
+  position: relative;
+  margin-left: -2rem;
   background: #000;
   height: 80px;
   display: flex;
@@ -73,7 +73,10 @@ export const NavMenu = styled.div`
   white-space: nowrap; */
 
   @media screen and (max-width: 768px) {
-    display: ${({ showNav }) => (showNav ? "flex" : "none")}; /* Updated: Use showNav prop to control display */
+    display: ${({ showNav }) =>
+      showNav
+        ? "flex"
+        : "none"}; /* Updated: Use showNav prop to control display */
     flex-direction: column; /* Added: Stack menu items vertically */
     position: absolute; /* Added: Position the menu absolutely */
     top: 80px; /* Added: Adjust top position based on navbar height */
@@ -121,6 +124,4 @@ export const NavBtnLink = styled(Link)`
     color: #010606;
     // text-decoration:underline;
   }
-
-
 `;

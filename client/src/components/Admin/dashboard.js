@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import Swal from 'sweetalert2';
 
-import Header from './header';
-import Table from './Table';
-import Add from './add';
-import Edit from './edit';
+import Header from "./header";
+import Table from "./Table";
+import Add from "./add";
+import Edit from "./edit";
 
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
-import { db } from '../Firebase/firebase.config'
+import { db } from "../Firebase/firebase.config";
 
 const Dashboard = ({ setIsAuthenticated }) => {
   const [employees, setEmployees] = useState();
@@ -16,23 +16,26 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getEmployees = async () => {
-    const querySnapshot = await getDocs(collection(db, "shavacchenna031005@gmail.com"));
-    const employees = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
-    setEmployees(employees)
-  }
+    const querySnapshot = await getDocs(collection(db, "spdesh41@gmail.com"));
+    const employees = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setEmployees(employees);
+  };
 
   useEffect(() => {
-    getEmployees()
+    getEmployees();
   }, []);
 
-  const handleEdit = id => {
-    const [employee] = employees.filter(employee => employee.id === id);
+  const handleEdit = (id) => {
+    const [employee] = employees.filter((employee) => employee.id === id);
 
     setSelectedEmployee(employee);
     setIsEditing(true);
   };
 
-  const handleDelete = id => {
+  const handleDelete = (id) => {
     // Swal.fire({
     //   icon: 'warning',
     //   title: 'Are you sure?',
@@ -43,9 +46,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
     // }).then(result => {
     //   if (result.value) {
     //     const [employee] = employees.filter(employee => employee.id === id);
-
     //     deleteDoc(doc(db, "employees", id));
-
     //     Swal.fire({
     //       icon: 'success',
     //       title: 'Deleted!',
@@ -53,15 +54,14 @@ const Dashboard = ({ setIsAuthenticated }) => {
     //       showConfirmButton: false,
     //       timer: 1500,
     //     });
-
-  //       const employeesCopy = employees.filter(employee => employee.id !== id);
-  //       setEmployees(employeesCopy);
-  //     }
-  //   });
+    //       const employeesCopy = employees.filter(employee => employee.id !== id);
+    //       setEmployees(employeesCopy);
+    //     }
+    //   });
   };
 
   return (
-    <div className="container">
+    <div className="container222">
       {!isAdding && !isEditing && (
         <>
           <Header
@@ -95,6 +95,5 @@ const Dashboard = ({ setIsAuthenticated }) => {
     </div>
   );
 };
-
 
 export default Dashboard;

@@ -69,6 +69,10 @@ const Res1 = () => {
     <>
       <div className="section1_1111">
         <div className="container-111">
+          <h1>
+            SELECT YOUR ADVERTISE TYPE
+            <br />
+          </h1>
           <div className="components-111">
             <div className="comp_111">
               <div

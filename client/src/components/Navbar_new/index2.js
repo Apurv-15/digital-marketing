@@ -61,17 +61,20 @@ const Navbar = () => {
           <NavLink to="/policy" className="nav-item">
             Policy
           </NavLink>
-          <NavLink to="/contact" className="nav-item">
+          <NavLink to="/collab" className="nav-item">
+            Need a Dev?
+          </NavLink>
+          {/* <NavLink to="/contact" className="nav-item">
             Contact Us
-          </NavLink>
-          <NavLink to="/faqs" className="nav-item">
+          </NavLink> */}
+          {/* <NavLink to="/faqs" className="nav-item">
             FAQs
-          </NavLink>
-          {isAuthenticated && (
+          </NavLink> */}
+          {/* {isAuthenticated && (
             <NavLink to="/myaccount" className="nav-item">
               My Profile
             </NavLink>
-          )}
+          )} */}
         </NavMenu>
         {isAuthenticated ? (
           <NavBtn className="nav-btn">

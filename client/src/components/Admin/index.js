@@ -16,7 +16,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const getEmployees = async () => {
-    const querySnapshot = await getDocs(collection(db, "Apurv"));
+    const querySnapshot = await getDocs(collection(db, "spdesh41@gmail.com"));
     const employees = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
     setEmployees(employees)
   }

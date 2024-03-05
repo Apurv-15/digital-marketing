@@ -3,13 +3,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./Res1234.css";
 import { db } from "../../Firebase/firebase.config";
 import { collection, doc, setDoc } from "firebase/firestore";
-import { useAuth } from "../../Auth0/UserAuthContext";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Res3 = () => {
   const [selectedCard3, setSelectedCard3] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const { currentuser } = useAuth();
+  const { currentuser } = useAuth0();
 
   const productName1 = location.state?.productName;
   const locationName1 = location.state?.locationName;
@@ -107,7 +107,7 @@ const Res3 = () => {
               </div>
             </div>
           </div>
-          <div className="button-container222">
+          <div className="button-container">
             <button onClick={handleButtonClick3}>Next</button>
           </div>
         </div>
